@@ -5,6 +5,8 @@ namespace Woo {
 		//void WindowResize(GLFWwindow* window, int width, int height);
 		bool Window::m_keys[MAX_KEYS];
 		bool Window::m_mouseButtons[MAX_BUTTONS];
+		double Window::m_mouseX;
+		double Window::m_mouseY;
 		Window::Window(const char* title, int width, int height) {
 			m_title = title;
 			m_width = width;

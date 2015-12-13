@@ -1,21 +1,26 @@
 #include <iostream>
 #include "Window.h"
+#include "Vector.h"
 
 int main() 
 {
 	using namespace Woo;
 	using namespace Graphics;
+	using namespace Math;
 
 	Window window("WooEngine",800,600);
 	glClearColor(0.f, 0.f, 1.f, 1.f);
 	GLuint vao;
 	glGenVertexArrays(1,&vao);
 	glBindVertexArray(vao);
+	Vector2 v1(0,8);
+	Vector2 v2(-1, 9);
 	while (!window.Closed()) {
 		window.Clear();
 		if (window.KeyPressed(GLFW_KEY_0)) {
 			std::cout << "Pressed 0!" << std::endl;
 		}
+		std::cout << v2+v1 << std::endl;
 		glDrawArrays(GL_ARRAY_BUFFER, 0, 6);
 #if 0
 		glBegin(GL_TRIANGLES);
