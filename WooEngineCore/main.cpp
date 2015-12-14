@@ -15,12 +15,18 @@ int main()
 	glBindVertexArray(vao);
 	Vector2 v1(0,8);
 	Vector2 v2(-1, 9);
+	Vector3 v3(4,6,7);
+	Vector4 v4 = Vector4::zero * 2;
+	
 	while (!window.Closed()) {
 		window.Clear();
 		if (window.KeyPressed(GLFW_KEY_0)) {
 			std::cout << "Pressed 0!" << std::endl;
 		}
 		std::cout << v2+v1 << std::endl;
+		std::cout << (v3/2) << std::endl;
+		std::cout << v4*1.6f << std::endl;
+		std::cout << (v4 == Vector4::zero) << std::endl;
 		glDrawArrays(GL_ARRAY_BUFFER, 0, 6);
 #if 0
 		glBegin(GL_TRIANGLES);
