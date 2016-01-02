@@ -36,12 +36,21 @@
     <ClCompile Include="Vector.cpp">
       <Filter>WooSource\Math</Filter>
     </ClCompile>
+    <ClCompile Include="Matrice4.cpp">
+      <Filter>WooSource\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
       <Filter>WooSource\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Vector.h">
+      <Filter>WooSource\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrice4.h">
+      <Filter>WooSource\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MathW.h">
       <Filter>WooSource\Math</Filter>
     </ClInclude>
   </ItemGroup>
