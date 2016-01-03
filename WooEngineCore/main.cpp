@@ -1,13 +1,12 @@
 #include <iostream>
 #include "Window.h"
-#include "Vector.h"
+#include "MathWoo.h"
 
 int main() 
 {
 	using namespace Woo;
 	using namespace Graphics;
 	using namespace Math;
-
 	Window window("WooEngine",800,600);
 	glClearColor(0.f, 0.f, 1.f, 1.f);
 	GLuint vao;
@@ -18,6 +17,8 @@ int main()
 	Vector3 v3(4,6,7);
 	Vector4 v4 = Vector4::zero * 2;
 	
+	Matrice4 myMatrice(1.0f);
+	std::cout << myMatrice.columns[3] << std::endl;
 	while (!window.Closed()) {
 		window.Clear();
 		if (window.KeyPressed(GLFW_KEY_0)) {

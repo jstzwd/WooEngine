@@ -131,13 +131,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Matrice4.cpp" />
+    <ClCompile Include="Matrice.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MathW.h" />
-    <ClInclude Include="Matrice4.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="MathWoo.h" />
+    <ClInclude Include="Matrice.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
