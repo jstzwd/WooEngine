@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrice.cpp" />
+    <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
@@ -140,8 +141,13 @@
     <ClInclude Include="Math.h" />
     <ClInclude Include="MathWoo.h" />
     <ClInclude Include="Matrice.h" />
+    <ClInclude Include="Shader.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Simple.frag" />
+    <None Include="Simple.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

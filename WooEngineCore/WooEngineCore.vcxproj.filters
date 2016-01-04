@@ -28,6 +28,9 @@
     <Filter Include="WooSource\Utility">
       <UniqueIdentifier>{af57e75e-26b1-41f6-8671-9d00776f6d35}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WooSource\Shaders">
+      <UniqueIdentifier>{52573ee7-624b-4b3a-87a2-9bb1b73ffc49}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -41,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="Matrice.cpp">
       <Filter>WooSource\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>WooSource\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -62,5 +68,16 @@
     <ClInclude Include="FileUtility.h">
       <Filter>WooSource\Utility</Filter>
     </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>WooSource\Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Simple.vert">
+      <Filter>WooSource\Shaders</Filter>
+    </None>
+    <None Include="Simple.frag">
+      <Filter>WooSource\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
