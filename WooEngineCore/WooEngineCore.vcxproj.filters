@@ -48,6 +48,9 @@
     <ClCompile Include="Shader.cpp">
       <Filter>WooSource\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="FileUtility.cpp">
+      <Filter>WooSource\Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">

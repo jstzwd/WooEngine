@@ -6,13 +6,19 @@ namespace Woo{
 			shaderID = Load();
 	    }
 
+		Shader::~Shader() {
+			glDeleteProgram(shaderID);
+		}
+
 		GLuint Shader::Load() {
 			GLuint program = glCreateProgram();
 			GLuint vertex = glCreateShader(GL_VERTEX_SHADER);
 			GLuint fragment = glCreateShader(GL_FRAGMENT_SHADER);
 
-			const char* vertSource = Utility::ReadFile(m_VertPath).c_str();
-			const char* fragSource = Utility::ReadFile(m_FragPath).c_str();
+			std::string vertString = Utility::ReadFile(m_VertPath);
+		    std::string fragString = Utility::ReadFile(m_FragPath);
+			const char* vertSource = vertString.c_str();
+			const char* fragSource = fragString.c_str();
 
 			glShaderSource(vertex, 1, &vertSource, NULL);
 			glCompileShader(vertex);

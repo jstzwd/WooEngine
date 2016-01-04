@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileUtility.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrice.cpp" />
     <ClCompile Include="Shader.cpp" />
