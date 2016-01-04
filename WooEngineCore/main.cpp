@@ -1,12 +1,17 @@
 #include <iostream>
 #include "Window.h"
 #include "MathWoo.h"
+#include "FileUtility.h"
 
 int main() 
 {
 	using namespace Woo;
 	using namespace Graphics;
 	using namespace Math;
+	using namespace Utility;
+
+	std::string test=ReadFile("main.cpp");
+	std::cout<<test<<std::endl;
 	Window window("WooEngine",800,600);
 	glClearColor(0.f, 0.f, 1.f, 1.f);
 	GLuint vao;

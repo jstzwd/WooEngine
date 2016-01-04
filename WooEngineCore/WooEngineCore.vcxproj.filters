@@ -25,6 +25,9 @@
     <Filter Include="WooSource\Math">
       <UniqueIdentifier>{90a8aa8e-e641-4ea8-acea-338dd0e89905}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WooSource\Utility">
+      <UniqueIdentifier>{af57e75e-26b1-41f6-8671-9d00776f6d35}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -55,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="Matrice.h">
       <Filter>WooSource\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtility.h">
+      <Filter>WooSource\Utility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
