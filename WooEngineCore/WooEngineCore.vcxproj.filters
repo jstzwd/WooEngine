@@ -51,6 +51,12 @@
     <ClCompile Include="FileUtility.cpp">
       <Filter>WooSource\Utility</Filter>
     </ClCompile>
+    <ClCompile Include="Buffer.cpp">
+      <Filter>WooSource\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBuffer.cpp">
+      <Filter>WooSource\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -72,6 +78,12 @@
       <Filter>WooSource\Utility</Filter>
     </ClInclude>
     <ClInclude Include="Shader.h">
+      <Filter>WooSource\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>WooSource\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBuffer.h">
       <Filter>WooSource\Graphics</Filter>
     </ClInclude>
   </ItemGroup>

@@ -130,7 +130,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Buffer.cpp" />
     <ClCompile Include="FileUtility.cpp" />
+    <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrice.cpp" />
     <ClCompile Include="Shader.cpp" />
@@ -138,7 +140,9 @@
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Buffer.h" />
     <ClInclude Include="FileUtility.h" />
+    <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="Math.h" />
     <ClInclude Include="MathWoo.h" />
     <ClInclude Include="Matrice.h" />
