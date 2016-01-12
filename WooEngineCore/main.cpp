@@ -26,9 +26,9 @@ int main()
 	glEnd();
 	*/
 	GLfloat vertices[] = {
-		0,-1,0,
-		1,0,0,
-		0,0,0
+		0,-4,0,
+		4,0,0,
+		-4,0,0
 	};
 	GLuint vertexBuffer;
 	glGenBuffers(1, &vertexBuffer);
@@ -37,11 +37,23 @@ int main()
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
 	glEnableVertexAttribArray(0);
 
+	Matrice4 ortho = Matrice4::Orthographic(-5, 5, 5, -5, -1, 1);
 	Shader myShader("Simple.vert", "Simple.frag");
 	myShader.Enable();
+	myShader.SetUniform4("pr_matrix", ortho);
+	myShader.SetUniform4("ml_matrix", Matrice4::Translate(Vector3(0, 0, 0)));
+
+	myShader.SetUniform2("light_pos", Vector2(0, -1));
+	myShader.SetUniform4("colour", Vector4(1, 1, 1, 1));
+
 	
 	while (!window.Closed()) {
 		window.Clear();
+		double x, y;
+		window.GetMousePosition(x, y);
+		std::cout << x << std::endl;
+		std::cout << y << std::endl;
+		myShader.SetUniform2("light_pos", Vector2(x*10/800-5, 5-y*10/600));
 		glDrawArrays(GL_TRIANGLES, 0, 9);
 		window.Update();
 	}

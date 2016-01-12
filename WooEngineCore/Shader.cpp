@@ -61,7 +61,35 @@ namespace Woo{
 
 			return program;
 		}
+		GLint Shader::GetUniformLocation(const GLchar* name)
+		{
+			return glGetUniformLocation(m_shaderID, name);
+		}
 
+		void Shader::SetUniform1(const GLchar* name, float value)
+		{
+			glUniform1f(GetUniformLocation(name), value);
+		}
+		void Shader::SetUniform1(const GLchar* name, int value)
+		{
+			glUniform1i(GetUniformLocation(name), value);
+		}
+		void Shader::SetUniform2(const GLchar* name, Math::Vector2 valueVector)
+		{
+			glUniform2f(GetUniformLocation(name), valueVector.x, valueVector.y);
+		}
+		void Shader::SetUniform3(const GLchar* name, Math::Vector3 valueVector)
+		{
+			glUniform3f(GetUniformLocation(name), valueVector.x, valueVector.y, valueVector.z);
+		}
+		void Shader::SetUniform4(const GLchar* name, Math::Vector4 valueVector)
+		{
+			glUniform4f(GetUniformLocation(name), valueVector.x,valueVector.y, valueVector.z, valueVector.w);
+		}
+		void Shader::SetUniform4(const GLchar* name, Math::Matrice4 valueMatrix)
+		{
+			glUniformMatrix4fv(GetUniformLocation(name),1,GL_FALSE,valueMatrix.elements);
+		}
 		void Shader::Enable() const {
 			glUseProgram(m_shaderID);
 		}

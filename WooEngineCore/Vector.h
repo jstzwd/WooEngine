@@ -71,9 +71,9 @@ namespace Woo {
 		};
 
 		struct Vector4 {
-			float x, y, z, a;
+			float x, y, z, w;
 			Vector4();
-			Vector4(const float& x, const float&y, const float& z, const float& a);
+			Vector4(const float& x, const float&y, const float& z, const float& w);
 
 			Vector4& operator=(const Vector4& other);
 			Vector4 operator+(const Vector4& other);
@@ -98,7 +98,7 @@ namespace Woo {
 			bool operator!=(const Vector4& other);
 
 			friend std::ostream& operator<<(std::ostream& stream, const Vector4& thisVector) {
-				stream << "Vector4(" << thisVector.x << ", " << thisVector.y << ", " << thisVector.z << ", " << thisVector.a << ")";
+				stream << "Vector4(" << thisVector.x << ", " << thisVector.y << ", " << thisVector.z << ", " << thisVector.w << ")";
 				return stream;
 			};
 			static Vector4 zero;

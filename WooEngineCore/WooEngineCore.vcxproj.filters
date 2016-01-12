@@ -57,6 +57,9 @@
     <ClCompile Include="IndexBuffer.cpp">
       <Filter>WooSource\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="VertexArray.cpp">
+      <Filter>WooSource\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -84,6 +87,9 @@
       <Filter>WooSource\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="IndexBuffer.h">
+      <Filter>WooSource\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexArray.h">
       <Filter>WooSource\Graphics</Filter>
     </ClInclude>
   </ItemGroup>

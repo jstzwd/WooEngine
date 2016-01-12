@@ -243,146 +243,146 @@ namespace Woo {
 			this->x = 0.f;
 			this->y = 0.f;
 			this->z = 0.f;
-			this->a = 0.f;
+			this->w = 0.f;
 		}
-		Vector4::Vector4(const float& x, const float& y, const float& z, const float& a) {
+		Vector4::Vector4(const float& x, const float& y, const float& z, const float& w) {
 			this->x = x;
 			this->y = y;
 			this->z = z;
-			this->a = a;
+			this->w = w;
 		}
 		Vector4& Vector4::operator=(const Vector4& other) {
 			this->x = other.x;
 			this->y = other.y;
 			this->z = other.z;
-			this->a = other.a;
+			this->w = other.w;
 			return *this;
 		}
 		Vector4 Vector4::operator+(const Vector4& other) {
-			Vector4 temp(this->x, this->y, this->z, this->a);
+			Vector4 temp(this->x, this->y, this->z, this->w);
 			temp.x += other.x;
 			temp.y += other.y;
 			temp.z += other.z;
-			temp.a += other.a;
+			temp.w += other.w;
 			return temp;
 		}
 		Vector4 Vector4::operator-(const Vector4& other) {
-			Vector4 temp(this->x, this->y, this->z, this->a);
+			Vector4 temp(this->x, this->y, this->z, this->w);
 			temp.x -= other.x;
 			temp.y -= other.y;
 			temp.z -= other.z;
-			temp.a -= other.a;
+			temp.w -= other.w;
 			return temp;
 		}
 		Vector4 Vector4::operator*(const int& other) {
-			Vector4 temp(this->x, this->y, this->z, this->a);
+			Vector4 temp(this->x, this->y, this->z, this->w);
 			temp.x *= other;
 			temp.y *= other;
 			temp.z *= other;
-			temp.a *= other;
+			temp.w *= other;
 			return temp;
 		}
 		Vector4 Vector4::operator*(const float& other) {
-			Vector4 temp(this->x, this->y, this->z, this->a);
+			Vector4 temp(this->x, this->y, this->z, this->w);
 			temp.x *= other;
 			temp.y *= other;
 			temp.z *= other;
-			temp.a *= other;
+			temp.w *= other;
 			return temp;
 		}
 		Vector4 Vector4::operator*(const double& other) {
-			Vector4 temp(this->x, this->y, this->z, this->a);
+			Vector4 temp(this->x, this->y, this->z, this->w);
 			temp.x *= other;
 			temp.y *= other;
 			temp.z *= other;
-			temp.a *= other;
+			temp.w *= other;
 			return temp;
 		}
 		Vector4 Vector4::operator/(const int& other) {
-			Vector4 temp(this->x, this->y, this->z, this->a);
+			Vector4 temp(this->x, this->y, this->z, this->w);
 			temp.x /= other;
 			temp.y /= other;
 			temp.z /= other;
-			temp.a /= other;
+			temp.w /= other;
 			return temp;
 		}
 		Vector4 Vector4::operator/(const float& other) {
-			Vector4 temp(this->x, this->y, this->z, this->a);
+			Vector4 temp(this->x, this->y, this->z, this->w);
 			temp.x /= other;
 			temp.y /= other;
 			temp.z /= other;
-			temp.a /= other;
+			temp.w /= other;
 			return temp;
 		}
 		Vector4 Vector4::operator/(const double& other) {
-			Vector4 temp(this->x, this->y, this->z, this->a);
+			Vector4 temp(this->x, this->y, this->z, this->w);
 			temp.x /= other;
 			temp.y /= other;
 			temp.z /= other;
-			temp.a /= other;
+			temp.w /= other;
 			return temp;
 		}
 		Vector4 Vector4::operator+=(const Vector4& other) {
 			this->x += other.x;
 			this->y += other.y;
 			this->z += other.z;
-			this->a += other.a;
+			this->w += other.w;
 			return *this;
 		}
 		Vector4 Vector4::operator-=(const Vector4& other) {
 			this->x -= other.x;
 			this->y -= other.y;
 			this->z -= other.z;
-			this->a -= other.a;
+			this->w -= other.w;
 			return *this;
 		}
 		Vector4 Vector4::operator*=(const int& other) {
 			this->x *= other;
 			this->y *= other;
 			this->z *= other;
-			this->a *= other;
+			this->w *= other;
 			return *this;
 		}
 		Vector4 Vector4::operator*=(const float& other) {
 			this->x *= other;
 			this->y *= other;
 			this->z *= other;
-			this->a *= other;
+			this->w *= other;
 			return *this;
 		}
 		Vector4 Vector4::operator*=(const double& other) {
 			this->x *= other;
 			this->y *= other;
 			this->z *= other;
-			this->a *= other;
+			this->w *= other;
 			return *this;
 		}
 		Vector4 Vector4::operator/=(const int& other) {
 			this->x /= other;
 			this->y /= other;
 			this->z /= other;
-			this->a /= other;
+			this->w /= other;
 			return *this;
 		}
 		Vector4 Vector4::operator/=(const float& other) {
 			this->x /= other;
 			this->y /= other;
 			this->z /= other;
-			this->a /= other;
+			this->w /= other;
 			return *this;
 		}
 		Vector4 Vector4::operator/=(const double& other) {
 			this->x /= other;
 			this->y /= other;
 			this->z /= other;
-			this->a /= other;
+			this->w /= other;
 			return *this;
 		}
 		bool Vector4::operator==(const Vector4& other) {
-			return (this->x == other.x) && (this->y == other.y) && (this->z == other.z) && (this->a == other.a);
+			return (this->x == other.x) && (this->y == other.y) && (this->z == other.z) && (this->w == other.w);
 		}
 		bool Vector4::operator!=(const Vector4& other) {
-			return (this->x != other.x) || (this->y != other.y) || (this->z != other.z) || (this->a != other.a);
+			return (this->x != other.x) || (this->y != other.y) || (this->z != other.z) || (this->w != other.w);
 		}
 		Vector4 Vector4::zero(0,0,0,0);
 	}
