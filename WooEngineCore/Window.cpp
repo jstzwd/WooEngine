@@ -21,6 +21,10 @@ namespace Woo {
 		}
 
 		void Window::Update(){
+			GLenum myError = glGetError();
+			if (myError != GL_NO_ERROR) {
+				std::cout << "OpenGL Error: "<< myError << std::endl;
+			}
 			glfwPollEvents();
 			//glfwGetFramebufferSize(m_window, &m_width, &m_height);
 			//glViewport(0, 0, m_width, m_height);

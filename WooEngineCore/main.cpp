@@ -2,6 +2,9 @@
 #include "Window.h"
 #include "MathWoo.h"
 #include "Shader.h"
+#include "Buffer.h"
+#include "IndexBuffer.h"
+#include "VertexArray.h"
 
 int main() 
 {
@@ -28,15 +31,25 @@ int main()
 	GLfloat vertices[] = {
 		0,-4,0,
 		4,0,0,
-		-4,0,0
+		-4,0,0,
+		0,4,0
 	};
+	GLushort indices[] = {
+		0,1,2,
+		1,2,3
+	};
+	VertexArray myVA;
+	Buffer* myVB = new Buffer(vertices, 16, 3);
+	IndexBuffer myIB(indices, 6);
+	myVA.AddBuffer(myVB, 0);
+#if 0
 	GLuint vertexBuffer;
 	glGenBuffers(1, &vertexBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
 	glEnableVertexAttribArray(0);
-
+#endif
 	Matrice4 ortho = Matrice4::Orthographic(-5, 5, 5, -5, -1, 1);
 	Shader myShader("Simple.vert", "Simple.frag");
 	myShader.Enable();
@@ -49,12 +62,17 @@ int main()
 	
 	while (!window.Closed()) {
 		window.Clear();
+	
 		double x, y;
 		window.GetMousePosition(x, y);
-		std::cout << x << std::endl;
-		std::cout << y << std::endl;
 		myShader.SetUniform2("light_pos", Vector2(x*10/800-5, 5-y*10/600));
-		glDrawArrays(GL_TRIANGLES, 0, 9);
+
+		myVA.Bind();
+		myIB.Bind();
+		//glDrawArrays(GL_TRIANGLES, 0, 12);
+		glDrawElements(GL_TRIANGLES, myIB.GetCount(), GL_UNSIGNED_SHORT, 0);
+		myIB.UnBind();
+		myVA.UnBind();
 		window.Update();
 	}
 	return 0;

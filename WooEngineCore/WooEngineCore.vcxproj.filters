@@ -31,6 +31,9 @@
     <Filter Include="WooSource\Shaders">
       <UniqueIdentifier>{52573ee7-624b-4b3a-87a2-9bb1b73ffc49}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WooSource\Graphics\Buffers">
+      <UniqueIdentifier>{52f2fd82-c990-408e-a8a1-e9fd5390dade}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -52,13 +55,13 @@
       <Filter>WooSource\Utility</Filter>
     </ClCompile>
     <ClCompile Include="Buffer.cpp">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClCompile>
     <ClCompile Include="IndexBuffer.cpp">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClCompile>
     <ClCompile Include="VertexArray.cpp">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -84,13 +87,13 @@
       <Filter>WooSource\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Buffer.h">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClInclude>
     <ClInclude Include="IndexBuffer.h">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClInclude>
     <ClInclude Include="VertexArray.h">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -16,5 +16,9 @@ namespace Woo {
 		void IndexBuffer::UnBind() const {
 			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 		}
+		GLint IndexBuffer::GetCount() const
+		{
+			return m_count;
+		}
 	}
 }
