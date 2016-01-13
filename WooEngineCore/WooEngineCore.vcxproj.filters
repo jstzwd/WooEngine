@@ -63,6 +63,12 @@
     <ClCompile Include="VertexArray.cpp">
       <Filter>WooSource\Graphics\Buffers</Filter>
     </ClCompile>
+    <ClCompile Include="Renderable.cpp">
+      <Filter>WooSource\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicRenderer.cpp">
+      <Filter>WooSource\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -94,6 +100,15 @@
     </ClInclude>
     <ClInclude Include="VertexArray.h">
       <Filter>WooSource\Graphics\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderable.h">
+      <Filter>WooSource\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>WooSource\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicRenderer.h">
+      <Filter>WooSource\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

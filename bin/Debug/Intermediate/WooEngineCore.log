@@ -1,15 +1,18 @@
-﻿Build started 1/12/2016 11:59:56 AM.
+﻿Build started 1/12/2016 5:19:45 PM.
      1>Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt VertexArray.cpp
-         VertexArray.cpp
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vertexarray.cpp(11): warning C4018: '<': signed/unsigned mismatch
+         C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(71): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
        Link:
-         C:\Softwares\Visual Studio 2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib legacy_stdio_definitions.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.lib" /MACHINE:X86 C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Buffer.obj
+         C:\Softwares\Visual Studio 2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib legacy_stdio_definitions.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.lib" /MACHINE:X86 C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BasicRenderer.obj
+         C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Buffer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\FileUtility.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\IndexBuffer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\main.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Matrice.obj
+         C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Renderable.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Shader.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Vector.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\VertexArray.obj
@@ -19,4 +22,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.60
+Time Elapsed 00:00:00.68

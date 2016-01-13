@@ -130,23 +130,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasicRenderer.cpp" />
     <ClCompile Include="Buffer.cpp" />
     <ClCompile Include="FileUtility.cpp" />
     <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrice.cpp" />
+    <ClCompile Include="Renderable.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="VertexArray.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BasicRenderer.h" />
+    <ClInclude Include="Renderable.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="FileUtility.h" />
     <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="Math.h" />
     <ClInclude Include="MathWoo.h" />
     <ClInclude Include="Matrice.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="VertexArray.h" />

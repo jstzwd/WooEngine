@@ -2,9 +2,7 @@
 #include "Window.h"
 #include "MathWoo.h"
 #include "Shader.h"
-#include "Buffer.h"
-#include "IndexBuffer.h"
-#include "VertexArray.h"
+#include "BasicRenderer.h"
 
 int main() 
 {
@@ -28,6 +26,7 @@ int main()
 	glVertex3f(0, -0.5, 0);
 	glEnd();
 	*/
+#if 0
 	GLfloat vertices[] = {
 		0,-4,0,
 		4,0,0,
@@ -42,6 +41,10 @@ int main()
 	Buffer* myVB = new Buffer(vertices, 16, 3);
 	IndexBuffer myIB(indices, 6);
 	myVA.AddBuffer(myVB, 0);
+#endif
+	Renderable2D sprite1(Math::Vector3(-1,1,0), Math::Vector2(2,2),Math::Vector4(1,0,1,1));
+	BasicRenderer2D myRenderer;
+	
 #if 0
 	GLuint vertexBuffer;
 	glGenBuffers(1, &vertexBuffer);
@@ -67,12 +70,16 @@ int main()
 		window.GetMousePosition(x, y);
 		myShader.SetUniform2("light_pos", Vector2(x*10/800-5, 5-y*10/600));
 
+#if 0
 		myVA.Bind();
 		myIB.Bind();
 		//glDrawArrays(GL_TRIANGLES, 0, 12);
 		glDrawElements(GL_TRIANGLES, myIB.GetCount(), GL_UNSIGNED_SHORT, 0);
 		myIB.UnBind();
 		myVA.UnBind();
+#endif
+		myRenderer.Submit(&sprite1);
+		myRenderer.Flush();
 		window.Update();
 	}
 	return 0;
