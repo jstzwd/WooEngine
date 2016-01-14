@@ -131,7 +131,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BasicRenderer.cpp" />
-    <ClCompile Include="BatchRenderer.cpp" />
     <ClCompile Include="Buffer.cpp" />
     <ClCompile Include="FileUtility.cpp" />
     <ClCompile Include="IndexBuffer.cpp" />
@@ -145,7 +144,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicRenderer.h" />
-    <ClInclude Include="BatchRenderer.h" />
     <ClInclude Include="Renderable.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="FileUtility.h" />

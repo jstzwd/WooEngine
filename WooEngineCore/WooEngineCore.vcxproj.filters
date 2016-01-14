@@ -69,9 +69,6 @@
     <ClCompile Include="BasicRenderer.cpp">
       <Filter>WooSource\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="BatchRenderer.cpp">
-      <Filter>WooSource\Graphics</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -111,9 +108,6 @@
       <Filter>WooSource\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="BasicRenderer.h">
-      <Filter>WooSource\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="BatchRenderer.h">
       <Filter>WooSource\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
