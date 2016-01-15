@@ -1,4 +1,4 @@
-﻿Build started 1/13/2016 11:43:36 PM.
+﻿Build started 1/14/2016 6:56:11 PM.
      1>Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt BatchRenderer.cpp
@@ -17,7 +17,6 @@
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Vector.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\VertexArray.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Window.obj
-         LINK : C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe not found or not built by the last incremental link; performing full link
      1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
      1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
      1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\di_wu\Desktop\WooEngine\bin\Debug\vc120.pdb'; linking object as if no debug info

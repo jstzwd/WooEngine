@@ -11,6 +11,7 @@ namespace Woo {
 			for (int i = 0; i < m_buffers.size(); i++) {
 				delete m_buffers[i];
 			}
+			glDeleteVertexArrays(1, &m_arrayID);
 		}
 		void VertexArray::Bind() const {
 			glBindVertexArray(m_arrayID);

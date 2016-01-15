@@ -10,6 +10,7 @@ namespace Woo {
 			GLuint m_componentCount;
 		public:
 			Buffer(GLfloat* data, GLsizei count, GLuint componentCount);
+			~Buffer();
 			void Bind() const;
 			void UnBind() const;
 			GLuint GetComponentCount() const;

@@ -7,6 +7,10 @@
 
 namespace Woo {
 	namespace Graphics {
+		struct VertexData {
+			Math::Vector3 position;
+			Math::Vector4 color;
+		};
 		class Renderable2D{
 		protected:
 			Math::Vector3 m_position;

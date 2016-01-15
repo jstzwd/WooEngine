@@ -10,6 +10,7 @@ namespace Woo {
 			GLuint m_count;
 		public:
 			IndexBuffer(GLushort* data, GLsizei count);
+			~IndexBuffer();
 			void Bind() const;
 			void UnBind() const;
 			GLint GetCount() const;

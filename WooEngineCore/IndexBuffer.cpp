@@ -8,7 +8,10 @@ namespace Woo {
 			glBufferData(GL_ELEMENT_ARRAY_BUFFER, count*sizeof(GLushort), data, GL_STATIC_DRAW);
 			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 		}
-
+		IndexBuffer::~IndexBuffer()
+		{
+			glDeleteBuffers(1, &m_bufferID); 
+		}
 		void IndexBuffer::Bind() const {
 			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_bufferID);
 		}
