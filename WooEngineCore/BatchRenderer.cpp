@@ -6,6 +6,7 @@ namespace Woo{
 		{
 			Initialize();
 		}
+
 		BatchRenderer2D::~BatchRenderer2D() 
 		{
 			delete m_myIBO;
@@ -42,12 +43,53 @@ namespace Woo{
 
 		}
 
-		void BatchRenderer2D::Submit(Renderable2D* sprite) {
+		void BatchRenderer2D::Begin() 
+		{
+			glBindBuffer(GL_ARRAY_BUFFER, m_myVBO);
+			m_buffer = (VertexData*)glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
+		}
+		void BatchRenderer2D::Submit(Renderable2D* sprite) 
+		{
+			
+			const Math::Vector3 position = sprite->GetPosition();
+			const Math::Vector2 size = sprite->GetSize();
 
+
+			m_buffer->position = Math::Vector3(position.x - size.x / 2, position.y - size.y / 2, 0);
+			m_buffer->color = sprite->GetColor();
+			m_buffer++;
+
+			m_buffer->position = Math::Vector3(position.x + size.x / 2, position.y - size.y / 2, 0);
+			m_buffer->color = sprite->GetColor();
+			m_buffer++;
+
+			m_buffer->position = Math::Vector3(position.x + size.x / 2, position.y + size.y / 2, 0);
+			m_buffer->color = sprite->GetColor();
+			m_buffer++;
+
+			m_buffer->position = Math::Vector3(position.x - size.x / 2, position.y + size.y / 2, 0);
+			m_buffer->color = sprite->GetColor();
+			m_buffer++;
+
+			m_indexCount += 6;
 		}
 
-		void BatchRenderer2D::Flush() {
+		void BatchRenderer2D::End()
+		{
+			glUnmapBuffer(GL_ARRAY_BUFFER);
+			glBindBuffer(GL_ARRAY_BUFFER, 0);
+		}
 
+
+		void BatchRenderer2D::Flush()
+		{
+			glBindVertexArray(m_myVAO);
+			m_myIBO->Bind();
+
+			glDrawElements(GL_TRIANGLES, m_indexCount, GL_UNSIGNED_SHORT, 0);
+
+			m_myIBO->UnBind();
+			glBindVertexArray(0);
 		}
 	}
 }

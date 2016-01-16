@@ -1,6 +1,7 @@
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\vc140.pdb
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\vc140.idb
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\basicrenderer.obj
+c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\batchrenderer.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\buffer.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\fileutility.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\indexbuffer.obj
@@ -8,6 +9,8 @@ c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\main.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\matrice.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\renderable.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\shader.obj
+c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\sprite.obj
+c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\staticsprite.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\vector.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\vertexarray.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\window.obj

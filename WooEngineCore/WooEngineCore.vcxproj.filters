@@ -34,6 +34,12 @@
     <Filter Include="WooSource\Graphics\Buffers">
       <UniqueIdentifier>{52f2fd82-c990-408e-a8a1-e9fd5390dade}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WooSource\Graphics\Renderers">
+      <UniqueIdentifier>{78fbd2a4-586f-4db4-813c-301bfb7905ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WooSource\Graphics\Renderables">
+      <UniqueIdentifier>{a3fd5cb3-6c8f-4448-bd99-bed4cdd98b52}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -63,14 +69,20 @@
     <ClCompile Include="VertexArray.cpp">
       <Filter>WooSource\Graphics\Buffers</Filter>
     </ClCompile>
-    <ClCompile Include="Renderable.cpp">
-      <Filter>WooSource\Graphics</Filter>
-    </ClCompile>
     <ClCompile Include="BasicRenderer.cpp">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Renderers</Filter>
     </ClCompile>
     <ClCompile Include="BatchRenderer.cpp">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderable.cpp">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticSprite.cpp">
+      <Filter>WooSource\Graphics\Renderables</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -104,17 +116,23 @@
     <ClInclude Include="VertexArray.h">
       <Filter>WooSource\Graphics\Buffers</Filter>
     </ClInclude>
-    <ClInclude Include="Renderable.h">
-      <Filter>WooSource\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>WooSource\Graphics</Filter>
-    </ClInclude>
     <ClInclude Include="BasicRenderer.h">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Renderers</Filter>
     </ClInclude>
     <ClInclude Include="BatchRenderer.h">
-      <Filter>WooSource\Graphics</Filter>
+      <Filter>WooSource\Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>WooSource\Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderable.h">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticSprite.h">
+      <Filter>WooSource\Graphics\Renderables</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

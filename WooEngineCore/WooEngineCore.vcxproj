@@ -139,6 +139,8 @@
     <ClCompile Include="Matrice.cpp" />
     <ClCompile Include="Renderable.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="StaticSprite.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="VertexArray.cpp" />
     <ClCompile Include="Window.cpp" />
@@ -155,6 +157,8 @@
     <ClInclude Include="Matrice.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="StaticSprite.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="VertexArray.h" />
     <ClInclude Include="Window.h" />

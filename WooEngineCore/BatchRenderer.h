@@ -21,6 +21,8 @@ namespace Woo {
 			GLsizei m_indexCount;
 			GLuint m_myVAO;
 			GLuint m_myVBO;
+
+			VertexData* m_buffer;
 		protected:
 			void Initialize();
 		public:
@@ -28,7 +30,8 @@ namespace Woo {
 			~BatchRenderer2D();
 			void Submit(Renderable2D* sprite) override;
 			void Flush() override;
-
+			void Begin();
+			void End();
 
 		};
 	 }

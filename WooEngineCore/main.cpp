@@ -3,6 +3,12 @@
 #include "MathWoo.h"
 #include "Shader.h"
 #include "BasicRenderer.h"
+#include "BatchRenderer.h"
+#include "Renderable.h"
+#include "Sprite.h"
+#include "StaticSprite.h"
+#include <time.h>
+
 
 int main() 
 {
@@ -42,8 +48,19 @@ int main()
 	IndexBuffer myIB(indices, 6);
 	myVA.AddBuffer(myVB, 0);
 #endif
-	Renderable2D sprite1(Math::Vector3(-1,1,0), Math::Vector2(2,2),Math::Vector4(1,0,1,1));
+	srand(time(NULL));
+
+	StaticSprite sprite1(Math::Vector3(-1,1,0), Math::Vector2(2,2),Math::Vector4(1,0,1,1));
 	BasicRenderer2D myRenderer;
+
+	std::vector<Renderable2D*> sprites;
+	BatchRenderer2D myBatchRenderer;
+
+	for (float y = -4.55; y < 5.0f; y++) {
+		for (float x = -4.55; x < 5.0f; x++) {
+			sprites.push_back(new Sprite(Math::Vector3(x, y, 0), Math::Vector2(0.9, 0.9), Math::Vector4(rand() % 1000 / 1000, 0, 1, 1)));
+		}
+	}
 	
 #if 0
 	GLuint vertexBuffer;
@@ -60,7 +77,7 @@ int main()
 	myShader.SetUniform4("ml_matrix", Matrice4::Translate(Vector3(0, 0, 0)));
 
 	myShader.SetUniform2("light_pos", Vector2(0, -1));
-	myShader.SetUniform4("colour", Vector4(1, 1, 1, 1));
+	myShader.SetUniform4("colour", Vector4(1, 0, 1, 1));
 
 	
 	while (!window.Closed()) {
@@ -78,8 +95,13 @@ int main()
 		myIB.UnBind();
 		myVA.UnBind();
 #endif
-		myRenderer.Submit(&sprite1);
-		myRenderer.Flush();
+		myBatchRenderer.Begin();
+		for (int i = 0; i < sprites.size(); i++) {
+			myBatchRenderer.Submit(sprites[i]);
+		}
+		
+		myBatchRenderer.End();
+		myBatchRenderer.Flush();
 		window.Update();
 	}
 	return 0;
