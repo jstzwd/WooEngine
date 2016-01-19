@@ -84,6 +84,9 @@
     <ClCompile Include="StaticSprite.cpp">
       <Filter>WooSource\Graphics\Renderables</Filter>
     </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>WooSource\Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -133,6 +136,9 @@
     </ClInclude>
     <ClInclude Include="StaticSprite.h">
       <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>WooSource\Utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

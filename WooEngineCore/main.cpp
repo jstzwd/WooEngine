@@ -8,6 +8,7 @@
 #include "Sprite.h"
 #include "StaticSprite.h"
 #include <time.h>
+#include "Timer.h"
 
 
 int main() 
@@ -15,10 +16,11 @@ int main()
 	using namespace Woo;
 	using namespace Graphics;
 	using namespace Math;
+	using namespace Utility;
 	//using namespace Utility;
 
-	Window window("WooEngine",800,600);
-	glClearColor(0.f, 0.f, 1.f, 1.f);
+	Window window("WooEngine",1600,1200);
+	glClearColor(0.f, 0.f, 0.f, 1.f);
 	/*
 	GLuint vao;
 	glGenVertexArrays(1,&vao);
@@ -56,9 +58,9 @@ int main()
 	std::vector<Renderable2D*> sprites;
 	BatchRenderer2D myBatchRenderer;
 
-	for (float y = -4.55; y < 5.0f; y++) {
-		for (float x = -4.55; x < 5.0f; x++) {
-			sprites.push_back(new Sprite(Math::Vector3(x, y, 0), Math::Vector2(0.9, 0.9), Math::Vector4(rand() % 1000 / 1000, 0, 1, 1)));
+	for (float y = -4.95; y < 5.0f; y+=0.11) {
+		for (float x = -4.95; x < 5.0f; x+=0.11) {
+			sprites.push_back(new Sprite(Math::Vector3(x, y, 0), Math::Vector2(0.1, 0.1), Math::Vector4(rand() % 1000 / 1000, 1, 0, 1)));
 		}
 	}
 	
@@ -79,13 +81,14 @@ int main()
 	myShader.SetUniform2("light_pos", Vector2(0, -1));
 	myShader.SetUniform4("colour", Vector4(1, 0, 1, 1));
 
-	
+	Timer myTimer;
+	double previousTime=0;
+	unsigned int fps=0;
 	while (!window.Closed()) {
 		window.Clear();
-	
 		double x, y;
 		window.GetMousePosition(x, y);
-		myShader.SetUniform2("light_pos", Vector2(x*10/800-5, 5-y*10/600));
+		myShader.SetUniform2("light_pos", Vector2(x*10/1600-5, 5-y*10/1200));
 
 #if 0
 		myVA.Bind();
@@ -103,6 +106,13 @@ int main()
 		myBatchRenderer.End();
 		myBatchRenderer.Flush();
 		window.Update();
+		fps++;
+		if (myTimer.ElapsedTime() - previousTime>1) {
+			printf("%d fps\n", fps);
+			previousTime += 1;
+			fps = 0;
+		}
+		
 	}
 	return 0;
 }

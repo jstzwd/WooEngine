@@ -48,6 +48,7 @@ namespace Woo {
 			glfwSetKeyCallback(m_window, KeyCallBack);
 			glfwSetMouseButtonCallback(m_window, MouseButtonCallBack);
 			glfwSetCursorPosCallback(m_window, MousePositionCallback);
+			glfwSwapInterval(0.0);
 			if (glewInit() != GLEW_OK) {
 				std::cout << "Failed to Initialize GLEW!" << std::endl;
 				return false;
