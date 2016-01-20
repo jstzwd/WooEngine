@@ -40,6 +40,9 @@
     <Filter Include="WooSource\Graphics\Renderables">
       <UniqueIdentifier>{a3fd5cb3-6c8f-4448-bd99-bed4cdd98b52}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WooSource\Graphics\Layers">
+      <UniqueIdentifier>{b8de76e7-538f-471e-b798-098526dc867a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -86,6 +89,12 @@
     </ClCompile>
     <ClCompile Include="Timer.cpp">
       <Filter>WooSource\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>WooSource\Graphics\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="TileLayer.cpp">
+      <Filter>WooSource\Graphics\Layers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +148,12 @@
     </ClInclude>
     <ClInclude Include="Timer.h">
       <Filter>WooSource\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>WooSource\Graphics\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="TileLayer.h">
+      <Filter>WooSource\Graphics\Layers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@
 
 namespace Woo {
 	namespace Graphics {
-		void BasicRenderer2D::Submit(Renderable2D* sprite)
+		void BasicRenderer2D::Submit(const Renderable2D* sprite)
 		{
 			m_renderable2Ds.push_back((StaticSprite*)sprite);
 		}

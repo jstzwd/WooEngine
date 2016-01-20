@@ -10,7 +10,7 @@ namespace Woo {
 		protected:
 			std::deque<StaticSprite*> m_renderable2Ds;
 		public:
-			void Submit(Renderable2D* sprite) override;
+			void Submit(const Renderable2D* sprite) override;
 			void Flush() override;
 		};
 	}

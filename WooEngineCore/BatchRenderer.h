@@ -28,10 +28,10 @@ namespace Woo {
 		public:
 			BatchRenderer2D();
 			~BatchRenderer2D();
-			void Submit(Renderable2D* sprite) override;
+			void Submit(const Renderable2D* sprite) override;
 			void Flush() override;
-			void Begin();
-			void End();
+			void Begin() override;
+			void End() override;
 
 		};
 	 }

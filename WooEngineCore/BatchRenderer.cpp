@@ -48,7 +48,7 @@ namespace Woo{
 			glBindBuffer(GL_ARRAY_BUFFER, m_myVBO);
 			m_buffer = (VertexData*)glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
 		}
-		void BatchRenderer2D::Submit(Renderable2D* sprite) 
+		void BatchRenderer2D::Submit(const Renderable2D* sprite) 
 		{
 			
 			const Math::Vector3 position = sprite->GetPosition();

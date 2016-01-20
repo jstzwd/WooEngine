@@ -5,9 +5,12 @@
 namespace Woo {
 	namespace Graphics {
 		class Renderer2D {
-		protected:
-			virtual void Submit(Renderable2D* sprite) = 0;
+		public:
+			virtual void Begin() {};
+			virtual void Submit(const Renderable2D* sprite) = 0;
+			virtual void End() {};
 			virtual void Flush() = 0;
+			
 		};
 	}
 }

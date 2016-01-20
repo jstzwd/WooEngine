@@ -9,6 +9,7 @@
 #include "StaticSprite.h"
 #include <time.h>
 #include "Timer.h"
+#include "TileLayer.h" 
 
 
 int main() 
@@ -52,17 +53,18 @@ int main()
 #endif
 	srand(time(NULL));
 
-	StaticSprite sprite1(Math::Vector3(-1,1,0), Math::Vector2(2,2),Math::Vector4(1,0,1,1));
-	BasicRenderer2D myRenderer;
-
+	//StaticSprite sprite1(Math::Vector3(-1,1,0), Math::Vector2(2,2),Math::Vector4(1,0,1,1));
+	//BasicRenderer2D myRenderer;
+	/*
 	std::vector<Renderable2D*> sprites;
 	BatchRenderer2D myBatchRenderer;
 
-	for (float y = -4.95; y < 5.0f; y+=0.11) {
-		for (float x = -4.95; x < 5.0f; x+=0.11) {
+	for (float y = -4.95; y < 5.0f; y += 0.11) {
+		for (float x = -4.95; x < 5.0f; x += 0.11) {
 			sprites.push_back(new Sprite(Math::Vector3(x, y, 0), Math::Vector2(0.1, 0.1), Math::Vector4(rand() % 1000 / 1000, 1, 0, 1)));
 		}
 	}
+	*/
 	
 #if 0
 	GLuint vertexBuffer;
@@ -81,6 +83,22 @@ int main()
 	myShader.SetUniform2("light_pos", Vector2(0, -1));
 	myShader.SetUniform4("colour", Vector4(1, 0, 1, 1));
 
+	Shader* s = new Shader("Simple.vert", "Simple.frag");
+	
+	s->Enable();
+	s->SetUniform2("light_pos", Vector2(0, -1));
+
+	//TileLayer layer(s);
+#if 1
+	TileLayer layer(s);
+	
+	for (float y = -4.95; y < 5.0f; y += 0.11) {
+		for (float x = -4.95; x < 5.0f; x += 0.11) {
+			layer.AddRenderable2D(new Sprite(Math::Vector3(x, y, 0), Math::Vector2(0.1, 0.1), Math::Vector4(rand() % 1000 / 1000, 1, 0, 1)));
+		}
+	}
+
+#endif
 	Timer myTimer;
 	double previousTime=0;
 	unsigned int fps=0;
@@ -98,6 +116,8 @@ int main()
 		myIB.UnBind();
 		myVA.UnBind();
 #endif
+
+#if 0
 		myBatchRenderer.Begin();
 		for (int i = 0; i < sprites.size(); i++) {
 			myBatchRenderer.Submit(sprites[i]);
@@ -105,6 +125,8 @@ int main()
 		
 		myBatchRenderer.End();
 		myBatchRenderer.Flush();
+#endif
+		layer.RenderLayer();
 		window.Update();
 		fps++;
 		if (myTimer.ElapsedTime() - previousTime>1) {
