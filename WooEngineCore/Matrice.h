@@ -17,8 +17,9 @@ namespace Woo {
 			
 			Matrice4& Multiply(const Matrice4& other);
 			Matrice4 operator*(const Matrice4& other);
+			Vector3 operator*(const Vector3& other);
 			Matrice4 operator*=(const Matrice4& other);
-
+			
 			static Matrice4 Orthographic(float left, float right, float top, float bottom, float near, float far);
 			static Matrice4 Perspective(float fieldOfViewDegree, float cameraRatio, float near, float far);
 

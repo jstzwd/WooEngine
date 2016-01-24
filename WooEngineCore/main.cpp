@@ -11,7 +11,6 @@
 #include "Timer.h"
 #include "TileLayer.h" 
 
-
 int main() 
 {
 	using namespace Woo;

@@ -96,6 +96,9 @@
     <ClCompile Include="TileLayer.cpp">
       <Filter>WooSource\Graphics\Layers</Filter>
     </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>WooSource\Graphics\Renderers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">

@@ -55,19 +55,19 @@ namespace Woo{
 			const Math::Vector2 size = sprite->GetSize();
 
 
-			m_buffer->position = Math::Vector3(position.x - size.x / 2, position.y - size.y / 2, 0);
+			m_buffer->position = (*m_topMatrix)*Math::Vector3(position.x - size.x / 2, position.y - size.y / 2, 0);
 			m_buffer->color = sprite->GetColor();
 			m_buffer++;
 
-			m_buffer->position = Math::Vector3(position.x + size.x / 2, position.y - size.y / 2, 0);
+			m_buffer->position = (*m_topMatrix)* Math::Vector3(position.x + size.x / 2, position.y - size.y / 2, 0);
 			m_buffer->color = sprite->GetColor();
 			m_buffer++;
 
-			m_buffer->position = Math::Vector3(position.x + size.x / 2, position.y + size.y / 2, 0);
+			m_buffer->position = (*m_topMatrix)*Math::Vector3(position.x + size.x / 2, position.y + size.y / 2, 0);
 			m_buffer->color = sprite->GetColor();
 			m_buffer++;
 
-			m_buffer->position = Math::Vector3(position.x - size.x / 2, position.y + size.y / 2, 0);
+			m_buffer->position = (*m_topMatrix)*Math::Vector3(position.x - size.x / 2, position.y + size.y / 2, 0);
 			m_buffer->color = sprite->GetColor();
 			m_buffer++;
 

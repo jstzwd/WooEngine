@@ -42,6 +42,14 @@ namespace Woo {
 			return result;
 		}
 
+		Vector3 Matrice4::operator*(const Vector3& other) {
+			return Vector3(
+				columns[0].x * other.x + columns[1].x * other.y + columns[2].x * other.z + columns[3].x,
+				columns[0].y * other.x + columns[1].y * other.y + columns[2].y * other.z + columns[3].y,
+				columns[0].z * other.x + columns[1].z * other.y + columns[2].z * other.z + columns[3].z
+				);
+		}
+
 		Matrice4 Matrice4::operator*=(const Matrice4& other) {
 			return Multiply(other);
 		}
