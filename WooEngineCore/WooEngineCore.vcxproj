@@ -149,6 +149,7 @@
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrice.cpp" />
+    <ClCompile Include="ParentRenderable.cpp" />
     <ClCompile Include="Renderable.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Shader.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="BasicRenderer.h" />
     <ClInclude Include="BatchRenderer.h" />
     <ClInclude Include="Layer.h" />
+    <ClInclude Include="ParentRenderable.h" />
     <ClInclude Include="Renderable.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="FileUtility.h" />

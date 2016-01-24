@@ -2,6 +2,7 @@
 
 #include "Renderer.h"
 #include "Renderable.h"
+#include "ParentRenderable.h"
 #include "Shader.h"
 #include <vector>
 

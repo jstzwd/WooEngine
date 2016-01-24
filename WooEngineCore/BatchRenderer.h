@@ -2,6 +2,7 @@
 
 #include <deque>
 #include "Renderer.h"
+#include "Renderable.h"
 
 namespace Woo {
 	namespace Graphics {

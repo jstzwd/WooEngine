@@ -99,6 +99,9 @@
     <ClCompile Include="Renderer.cpp">
       <Filter>WooSource\Graphics\Renderers</Filter>
     </ClCompile>
+    <ClCompile Include="ParentRenderable.cpp">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -157,6 +160,9 @@
     </ClInclude>
     <ClInclude Include="TileLayer.h">
       <Filter>WooSource\Graphics\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="ParentRenderable.h">
+      <Filter>WooSource\Graphics\Renderables</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

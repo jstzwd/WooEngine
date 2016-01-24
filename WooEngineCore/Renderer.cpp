@@ -8,9 +8,9 @@ namespace Woo{
 			m_topMatrix = &m_matrixStack.back();
 		}
 
-		void Renderer2D::Push(const Math::Matrice4& newMatrix, bool inGroup)
+		void Renderer2D::Push(const Math::Matrice4& newMatrix, bool isChild)
 		{
-			if (inGroup)
+			if (isChild)
 			{
 				m_matrixStack.push_back(m_matrixStack.back()*newMatrix);
 			}

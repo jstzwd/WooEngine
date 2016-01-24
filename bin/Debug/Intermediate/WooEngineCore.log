@@ -1,22 +1,87 @@
-﻿Build started 1/23/2016 10:23:00 PM.
-     1>Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" on node 2 (Build target(s)).
+﻿Build started 1/24/2016 12:29:42 AM.
+     1>Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt BasicRenderer.cpp BatchRenderer.cpp Layer.cpp Matrice.cpp Renderable.cpp Renderer.cpp Shader.cpp StaticSprite.cpp TileLayer.cpp main.cpp
+         C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt BasicRenderer.cpp BatchRenderer.cpp Buffer.cpp FileUtility.cpp IndexBuffer.cpp Layer.cpp main.cpp Matrice.cpp ParentRenderable.cpp Renderable.cpp Renderer.cpp Shader.cpp Sprite.cpp StaticSprite.cpp TileLayer.cpp Timer.cpp Vector.cpp VertexArray.cpp Window.cpp
+         Window.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\window.cpp(51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+         VertexArray.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vertexarray.cpp(11): warning C4018: '<': signed/unsigned mismatch
+         Vector.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(44): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(45): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(62): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(63): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(87): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(88): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(102): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(103): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(160): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(161): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(162): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(181): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(182): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(183): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(211): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(212): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(213): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(229): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(230): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(231): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(295): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(296): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(297): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(298): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(319): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(320): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(321): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(322): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(354): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(355): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(356): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(357): warning C4244: '*=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(375): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(376): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(377): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\vector.cpp(378): warning C4244: '/=': conversion from 'const double' to 'float', possible loss of data
+         Timer.cpp
+         TileLayer.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+         StaticSprite.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+         Sprite.cpp
+         Shader.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
          Renderer.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+         Renderable.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+         ParentRenderable.cpp
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
          Matrice.cpp
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+         main.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+         c:\users\di_wu\desktop\wooengine\dependencies\glfw\include\glfw\glfw3.h(85): note: see previous definition of 'APIENTRY'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(53): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(94): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(94): warning C4305: '+=': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(95): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(95): warning C4305: '+=': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(96): warning C4305: 'argument': truncation from 'double' to 'const float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(96): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(108): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+         Layer.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\layer.cpp(19): warning C4018: '<': signed/unsigned mismatch
+         IndexBuffer.cpp
+         FileUtility.cpp
+         Buffer.cpp
          BatchRenderer.cpp
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-         Generating Code...
-         Skipping... (no relevant changes detected)
-         main.cpp
-         TileLayer.cpp
-         StaticSprite.cpp
-         Shader.cpp
-         Renderable.cpp
-         Layer.cpp
          BasicRenderer.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+         Generating Code...
        Link:
          C:\Softwares\Visual Studio 2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib legacy_stdio_definitions.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.lib" /MACHINE:X86 C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BasicRenderer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BatchRenderer.obj
@@ -26,6 +91,7 @@
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Layer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\main.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Matrice.obj
+         C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\ParentRenderable.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Renderable.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Renderer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Shader.obj
@@ -36,9 +102,12 @@
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Vector.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\VertexArray.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Window.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\di_wu\Desktop\WooEngine\bin\Debug\vc120.pdb'; linking object as if no debug info
          WooEngineCore.vcxproj -> C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe
-     1>Done Building Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.76
+Time Elapsed 00:00:07.77

@@ -30,8 +30,9 @@ namespace Woo{
 		{
 			m_shader->Enable();
 			m_renderer->Begin();
-			for(const Renderable2D* sprite : m_renderable2Ds){
-				m_renderer->Submit(sprite);
+			for(Renderable2D* sprite : m_renderable2Ds){
+				sprite->SubmitSelf(m_renderer);
+			//	m_renderer->Submit(sprite);
 			}
 			m_renderer->End();
 			m_renderer->Flush();
