@@ -28,9 +28,6 @@
     <Filter Include="WooSource\Utility">
       <UniqueIdentifier>{af57e75e-26b1-41f6-8671-9d00776f6d35}</UniqueIdentifier>
     </Filter>
-    <Filter Include="WooSource\Shaders">
-      <UniqueIdentifier>{52573ee7-624b-4b3a-87a2-9bb1b73ffc49}</UniqueIdentifier>
-    </Filter>
     <Filter Include="WooSource\Graphics\Buffers">
       <UniqueIdentifier>{52f2fd82-c990-408e-a8a1-e9fd5390dade}</UniqueIdentifier>
     </Filter>
@@ -43,134 +40,155 @@
     <Filter Include="WooSource\Graphics\Layers">
       <UniqueIdentifier>{b8de76e7-538f-471e-b798-098526dc867a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WooSource\Graphics\Shaders">
+      <UniqueIdentifier>{5cec3a2d-8d38-4d9b-b2dd-12478f1a6066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WooSource\SampleShaders">
+      <UniqueIdentifier>{52573ee7-624b-4b3a-87a2-9bb1b73ffc49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WooSource\Graphics\Window">
+      <UniqueIdentifier>{19d446f5-aa99-4731-8888-6ad277c954f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>WooSource\Graphics</Filter>
+    <ClCompile Include="Graphics\Renderers\BasicRenderer.cpp">
+      <Filter>WooSource\Graphics\Renderers</Filter>
     </ClCompile>
-    <ClCompile Include="Vector.cpp">
-      <Filter>WooSource\Math</Filter>
+    <ClCompile Include="Graphics\Renderers\BatchRenderer.cpp">
+      <Filter>WooSource\Graphics\Renderers</Filter>
     </ClCompile>
-    <ClCompile Include="Matrice.cpp">
-      <Filter>WooSource\Math</Filter>
+    <ClCompile Include="Graphics\Buffers\Buffer.cpp">
+      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClCompile>
-    <ClCompile Include="Shader.cpp">
-      <Filter>WooSource\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="FileUtility.cpp">
+    <ClCompile Include="Utility\FileUtility.cpp">
       <Filter>WooSource\Utility</Filter>
     </ClCompile>
-    <ClCompile Include="Buffer.cpp">
-      <Filter>WooSource\Graphics\Buffers</Filter>
-    </ClCompile>
-    <ClCompile Include="IndexBuffer.cpp">
-      <Filter>WooSource\Graphics\Buffers</Filter>
-    </ClCompile>
-    <ClCompile Include="VertexArray.cpp">
-      <Filter>WooSource\Graphics\Buffers</Filter>
-    </ClCompile>
-    <ClCompile Include="BasicRenderer.cpp">
-      <Filter>WooSource\Graphics\Renderers</Filter>
-    </ClCompile>
-    <ClCompile Include="BatchRenderer.cpp">
-      <Filter>WooSource\Graphics\Renderers</Filter>
-    </ClCompile>
-    <ClCompile Include="Renderable.cpp">
-      <Filter>WooSource\Graphics\Renderables</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite.cpp">
-      <Filter>WooSource\Graphics\Renderables</Filter>
-    </ClCompile>
-    <ClCompile Include="StaticSprite.cpp">
-      <Filter>WooSource\Graphics\Renderables</Filter>
-    </ClCompile>
-    <ClCompile Include="Timer.cpp">
+    <ClCompile Include="Utility\ImageUtility.cpp">
       <Filter>WooSource\Utility</Filter>
     </ClCompile>
-    <ClCompile Include="Layer.cpp">
+    <ClCompile Include="Graphics\Buffers\IndexBuffer.cpp">
+      <Filter>WooSource\Graphics\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Layers\Layer.cpp">
       <Filter>WooSource\Graphics\Layers</Filter>
     </ClCompile>
-    <ClCompile Include="TileLayer.cpp">
-      <Filter>WooSource\Graphics\Layers</Filter>
+    <ClCompile Include="Math\Matrice.cpp">
+      <Filter>WooSource\Math</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer.cpp">
+    <ClCompile Include="Graphics\Renderables\ParentRenderable.cpp">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderables\Renderable.cpp">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderers\Renderer.cpp">
       <Filter>WooSource\Graphics\Renderers</Filter>
     </ClCompile>
-    <ClCompile Include="ParentRenderable.cpp">
+    <ClCompile Include="Graphics\Shaders\Shader.cpp">
+      <Filter>WooSource\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderables\Sprite.cpp">
       <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderables\StaticSprite.cpp">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Shaders\Texture.cpp">
+      <Filter>WooSource\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Layers\TileLayer.cpp">
+      <Filter>WooSource\Graphics\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Timer.cpp">
+      <Filter>WooSource\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector.cpp">
+      <Filter>WooSource\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Buffers\VertexArray.cpp">
+      <Filter>WooSource\Graphics\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Window\Window.cpp">
+      <Filter>WooSource\Graphics\Window</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Window.h">
-      <Filter>WooSource\Graphics</Filter>
+    <ClInclude Include="Graphics\Renderers\BasicRenderer.h">
+      <Filter>WooSource\Graphics\Renderers</Filter>
     </ClInclude>
-    <ClInclude Include="Vector.h">
-      <Filter>WooSource\Math</Filter>
+    <ClInclude Include="Graphics\Renderers\BatchRenderer.h">
+      <Filter>WooSource\Graphics\Renderers</Filter>
     </ClInclude>
-    <ClInclude Include="MathWoo.h">
-      <Filter>WooSource\Math</Filter>
+    <ClInclude Include="Graphics\Buffers\Buffer.h">
+      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClInclude>
-    <ClInclude Include="Math.h">
-      <Filter>WooSource\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Matrice.h">
-      <Filter>WooSource\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="FileUtility.h">
+    <ClInclude Include="Utility\FileUtility.h">
       <Filter>WooSource\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="Shader.h">
-      <Filter>WooSource\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Buffer.h">
-      <Filter>WooSource\Graphics\Buffers</Filter>
-    </ClInclude>
-    <ClInclude Include="IndexBuffer.h">
-      <Filter>WooSource\Graphics\Buffers</Filter>
-    </ClInclude>
-    <ClInclude Include="VertexArray.h">
-      <Filter>WooSource\Graphics\Buffers</Filter>
-    </ClInclude>
-    <ClInclude Include="BasicRenderer.h">
-      <Filter>WooSource\Graphics\Renderers</Filter>
-    </ClInclude>
-    <ClInclude Include="BatchRenderer.h">
-      <Filter>WooSource\Graphics\Renderers</Filter>
-    </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>WooSource\Graphics\Renderers</Filter>
-    </ClInclude>
-    <ClInclude Include="Renderable.h">
-      <Filter>WooSource\Graphics\Renderables</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>WooSource\Graphics\Renderables</Filter>
-    </ClInclude>
-    <ClInclude Include="StaticSprite.h">
-      <Filter>WooSource\Graphics\Renderables</Filter>
-    </ClInclude>
-    <ClInclude Include="Timer.h">
+    <ClInclude Include="Utility\ImageUtility.h">
       <Filter>WooSource\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="Layer.h">
+    <ClInclude Include="Graphics\Buffers\IndexBuffer.h">
+      <Filter>WooSource\Graphics\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Layers\Layer.h">
       <Filter>WooSource\Graphics\Layers</Filter>
     </ClInclude>
-    <ClInclude Include="TileLayer.h">
-      <Filter>WooSource\Graphics\Layers</Filter>
+    <ClInclude Include="Math\Math.h">
+      <Filter>WooSource\Math</Filter>
     </ClInclude>
-    <ClInclude Include="ParentRenderable.h">
+    <ClInclude Include="Math\MathWoo.h">
+      <Filter>WooSource\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrice.h">
+      <Filter>WooSource\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderables\ParentRenderable.h">
       <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderables\Renderable.h">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderers\Renderer.h">
+      <Filter>WooSource\Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Shaders\Shader.h">
+      <Filter>WooSource\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderables\StaticSprite.h">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderables\Sprite.h">
+      <Filter>WooSource\Graphics\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Shaders\Texture.h">
+      <Filter>WooSource\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Layers\TileLayer.h">
+      <Filter>WooSource\Graphics\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Timer.h">
+      <Filter>WooSource\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector.h">
+      <Filter>WooSource\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Buffers\VertexArray.h">
+      <Filter>WooSource\Graphics\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Window\Window.h">
+      <Filter>WooSource\Graphics\Window</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Simple.vert">
-      <Filter>WooSource\Shaders</Filter>
+    <None Include="SampleShaders\Simple.frag">
+      <Filter>WooSource\SampleShaders</Filter>
     </None>
-    <None Include="Simple.frag">
-      <Filter>WooSource\Shaders</Filter>
+    <None Include="SampleShaders\Simple.vert">
+      <Filter>WooSource\SampleShaders</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -1,15 +1,15 @@
 #include <iostream>
-#include "Window.h"
-#include "MathWoo.h"
-#include "Shader.h"
-#include "BasicRenderer.h"
-#include "BatchRenderer.h"
-#include "Renderable.h"
-#include "Sprite.h"
-#include "StaticSprite.h"
+#include "Graphics\Window\Window.h"
+#include "Math\MathWoo.h"
+#include "Graphics\Shaders\Shader.h"
+#include "Graphics\Renderers\BasicRenderer.h"
+#include "Graphics\Renderers\BatchRenderer.h"
+#include "Graphics\Renderables\Renderable.h"
+#include "Graphics\Renderables\Sprite.h"
+#include "Graphics\Renderables\StaticSprite.h"
 #include <time.h>
-#include "Timer.h"
-#include "TileLayer.h" 
+#include "Utility\Timer.h"
+#include "Graphics\Layers\TileLayer.h" 
 #include <FreeImage.h>
 
 int main() 
@@ -75,7 +75,7 @@ int main()
 	glEnableVertexAttribArray(0);
 #endif
 	Matrice4 ortho = Matrice4::Orthographic(-5, 5, 5, -5, -1, 1);
-	Shader myShader("Simple.vert", "Simple.frag");
+	Shader myShader("SampleShaders/Simple.vert", "SampleShaders/Simple.frag");
 	myShader.Enable();
 	myShader.SetUniform4("pr_matrix", ortho);
 	myShader.SetUniform4("ml_matrix", Matrice4::Translate(Vector3(0, 0, 0)));
@@ -83,7 +83,7 @@ int main()
 	myShader.SetUniform2("light_pos", Vector2(0, -1));
 	myShader.SetUniform4("colour", Vector4(1, 0, 1, 1));
 
-	Shader* s = new Shader("Simple.vert", "Simple.frag");
+	Shader* s = new Shader("SampleShaders/Simple.vert", "SampleShaders/Simple.frag");
 	
 	s->Enable();
 	s->SetUniform2("light_pos", Vector2(0, -1));
