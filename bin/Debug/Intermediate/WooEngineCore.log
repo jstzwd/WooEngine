@@ -1,4 +1,4 @@
-﻿Build started 1/24/2016 12:29:42 AM.
+﻿Build started 1/25/2016 7:47:53 PM.
      1>Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt BasicRenderer.cpp BatchRenderer.cpp Buffer.cpp FileUtility.cpp IndexBuffer.cpp Layer.cpp main.cpp Matrice.cpp ParentRenderable.cpp Renderable.cpp Renderer.cpp Shader.cpp Sprite.cpp StaticSprite.cpp TileLayer.cpp Timer.cpp Vector.cpp VertexArray.cpp Window.cpp
@@ -63,14 +63,14 @@
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
      1>c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
          c:\users\di_wu\desktop\wooengine\dependencies\glfw\include\glfw\glfw3.h(85): note: see previous definition of 'APIENTRY'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(53): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(94): warning C4305: 'initializing': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(94): warning C4305: '+=': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(54): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(95): warning C4305: 'initializing': truncation from 'double' to 'float'
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(95): warning C4305: '+=': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(96): warning C4305: 'argument': truncation from 'double' to 'const float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(96): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(108): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(96): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(96): warning C4305: '+=': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(97): warning C4305: 'argument': truncation from 'double' to 'const float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(97): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(109): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
          Layer.cpp
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\layer.cpp(19): warning C4018: '<': signed/unsigned mismatch
@@ -110,4 +110,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.77
+Time Elapsed 00:00:06.82

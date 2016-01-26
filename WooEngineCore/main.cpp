@@ -10,6 +10,7 @@
 #include <time.h>
 #include "Timer.h"
 #include "TileLayer.h" 
+#include <FreeImage.h>
 
 int main() 
 {
