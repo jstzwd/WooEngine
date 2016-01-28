@@ -21,9 +21,11 @@ namespace Woo{
 			glBindBuffer(GL_ARRAY_BUFFER, m_myVBO);
 			glBufferData(GL_ARRAY_BUFFER, GRAPHICS_RENDERER_MAX_BUFFER_SIZE, nullptr, GL_DYNAMIC_DRAW);
 			glEnableVertexAttribArray(GRAPHICS_SHADER_POSITION);
+			glEnableVertexAttribArray(GRAPHICS_SHADER_UV);
 			glEnableVertexAttribArray(GRAPHICS_SHADER_COLOR);
 			glVertexAttribPointer(GRAPHICS_SHADER_POSITION, 3, GL_FLOAT, GL_FALSE, GRAPHICS_RENDERER_VERTEX_SIZE, (const GLvoid*) 0);
-			glVertexAttribPointer(GRAPHICS_SHADER_COLOR, 4, GL_FLOAT, GL_FALSE, GRAPHICS_RENDERER_VERTEX_SIZE, (const GLvoid*)(3*sizeof(GLfloat)));
+			glVertexAttribPointer(GRAPHICS_SHADER_UV, 2, GL_FLOAT,GL_FALSE, GRAPHICS_RENDERER_VERTEX_SIZE, (const GLvoid*)(offsetof(VertexData,VertexData::uv)));
+			glVertexAttribPointer(GRAPHICS_SHADER_COLOR, 4, GL_FLOAT, GL_FALSE, GRAPHICS_RENDERER_VERTEX_SIZE, (const GLvoid*)(offsetof(VertexData, VertexData::color)));
 			glBindBuffer(GL_ARRAY_BUFFER, 0);
 
 			GLushort indices[GRAPHICS_RENDERER_INDICES_SIZE];
@@ -51,24 +53,29 @@ namespace Woo{
 		void BatchRenderer2D::Submit(const Renderable2D* sprite) 
 		{
 			
-			const Math::Vector3 position = sprite->GetPosition();
-			const Math::Vector2 size = sprite->GetSize();
-
+			const Math::Vector3& position = sprite->GetPosition();
+			const Math::Vector2& size = sprite->GetSize();
+			const std::vector<Math::Vector2>& uvs = sprite->GetUVs();
+			const Math::Vector4& color = sprite->GetColor();
 
 			m_buffer->position = (*m_topMatrix)*Math::Vector3(position.x - size.x / 2, position.y - size.y / 2, 0);
-			m_buffer->color = sprite->GetColor();
+			m_buffer->uv = uvs[0];
+			m_buffer->color = color;
 			m_buffer++;
 
 			m_buffer->position = (*m_topMatrix)* Math::Vector3(position.x + size.x / 2, position.y - size.y / 2, 0);
-			m_buffer->color = sprite->GetColor();
+			m_buffer->uv = uvs[1];
+			m_buffer->color = color;
 			m_buffer++;
 
 			m_buffer->position = (*m_topMatrix)*Math::Vector3(position.x + size.x / 2, position.y + size.y / 2, 0);
-			m_buffer->color = sprite->GetColor();
+			m_buffer->uv = uvs[2];
+			m_buffer->color = color;
 			m_buffer++;
 
 			m_buffer->position = (*m_topMatrix)*Math::Vector3(position.x - size.x / 2, position.y + size.y / 2, 0);
-			m_buffer->color = sprite->GetColor();
+			m_buffer->uv = uvs[3];
+			m_buffer->color = color;
 			m_buffer++;
 
 			m_indexCount += 6;

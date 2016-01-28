@@ -14,7 +14,8 @@ namespace Woo {
 #define GRAPHICS_RENDERER_INDICES_SIZE GRAPHICS_RENDERER_MAX_SPRITES*6
 
 #define GRAPHICS_SHADER_POSITION 0
-#define GRAPHICS_SHADER_COLOR 1
+#define GRAPHICS_SHADER_UV 1
+#define GRAPHICS_SHADER_COLOR 2
 
 		class BatchRenderer2D : public Renderer2D {
 		private:

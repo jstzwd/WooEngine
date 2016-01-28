@@ -11,6 +11,7 @@
 #include "Utility\Timer.h"
 #include "Graphics\Layers\TileLayer.h" 
 #include <FreeImage.h>
+#include "Graphics\Shaders\Texture.h"
 
 int main() 
 {
@@ -85,18 +86,24 @@ int main()
 
 	Shader* s = new Shader("SampleShaders/Simple.vert", "SampleShaders/Simple.frag");
 	
-	s->Enable();
-	s->SetUniform2("light_pos", Vector2(0, -1));
-
-	//TileLayer layer(s);
-#if 1
-	TileLayer layer(s);
 	
+	s->SetUniform2("light_pos", Vector2(0, -1));
+	TileLayer layer(s);
+
 	for (float y = -4.95; y < 5.0f; y += 0.11) {
 		for (float x = -4.95; x < 5.0f; x += 0.11) {
 			layer.AddRenderable2D(new Sprite(Math::Vector3(x, y, 0), Math::Vector2(0.1, 0.1), Math::Vector4(rand() % 1000 / 1000, 1, 0, 1)));
 		}
 	}
+	glActiveTexture(GL_TEXTURE0);
+	Texture myTex("myTexture.png");
+	myTex.Bind();
+	s->Enable();
+	s->SetUniform1("myTexture", 0);
+	s->SetUniform4("pr_matrix", ortho);
+	//TileLayer layer(s);
+#if 1
+	
 
 #endif
 	Timer myTimer;
