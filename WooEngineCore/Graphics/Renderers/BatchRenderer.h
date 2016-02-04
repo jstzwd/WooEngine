@@ -16,6 +16,7 @@ namespace Woo {
 #define GRAPHICS_SHADER_POSITION 0
 #define GRAPHICS_SHADER_UV 1
 #define GRAPHICS_SHADER_COLOR 2
+#define GRAPHICS_SHADER_TEXTURENUMBER 3
 
 		class BatchRenderer2D : public Renderer2D {
 		private:
@@ -25,6 +26,8 @@ namespace Woo {
 			GLuint m_myVBO;
 
 			VertexData* m_buffer;
+
+			std::vector<GLuint> m_textures;
 		protected:
 			void Initialize();
 		public:

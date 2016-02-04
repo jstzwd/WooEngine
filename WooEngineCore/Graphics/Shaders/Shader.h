@@ -19,6 +19,8 @@ namespace Woo{
 
 			void SetUniform1(const GLchar* name, float value);
 			void SetUniform1(const GLchar* name, int value);
+			void SetUniform1(const GLchar* name, int count, int* value);
+			void SetUniform1(const GLchar* name, int count, float* value);
 			void SetUniform2(const GLchar* name, const Math::Vector2 valueVector2);
 			void SetUniform3(const GLchar* name, const Math::Vector3 valueVector3);
 			void SetUniform4(const GLchar* name, const Math::Vector4 valueVector4);

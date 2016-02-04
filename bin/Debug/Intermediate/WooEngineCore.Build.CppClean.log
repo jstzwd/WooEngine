@@ -6,6 +6,7 @@ c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\fileutility.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\imageutility.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\indexbuffer.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\layer.obj
+c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\main.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\matrice.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\parentrenderable.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\renderable.obj
@@ -14,13 +15,12 @@ c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\shader.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\sprite.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\staticsprite.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\texture.obj
+c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\tilelayer.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\timer.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\vector.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\vertexarray.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\window.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\basicrenderer.obj
-c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\main.obj
-c:\users\di_wu\desktop\wooengine\bin\debug\intermediate\tilelayer.obj
 c:\users\di_wu\desktop\wooengine\bin\debug\wooenginecore.ilk
 c:\users\di_wu\desktop\wooengine\bin\debug\wooenginecore.exe
 c:\users\di_wu\desktop\wooengine\bin\debug\wooenginecore.pdb

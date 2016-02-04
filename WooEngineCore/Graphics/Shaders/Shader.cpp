@@ -74,6 +74,14 @@ namespace Woo{
 		{
 			glUniform1i(GetUniformLocation(name), value);
 		}
+		void Shader::SetUniform1(const GLchar* name, int count, int* value)
+		{
+			glUniform1iv(GetUniformLocation(name), count, value);
+		}
+		void Shader::SetUniform1(const GLchar* name, int count, float* value)
+		{
+			glUniform1fv(GetUniformLocation(name), count, value);
+		}
 		void Shader::SetUniform2(const GLchar* name, Math::Vector2 valueVector)
 		{
 			glUniform2f(GetUniformLocation(name), valueVector.x, valueVector.y);

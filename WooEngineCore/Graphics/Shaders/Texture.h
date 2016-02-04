@@ -21,7 +21,7 @@ namespace Woo {
 
 			inline unsigned int GetWidth() const { return m_width; }
 			inline unsigned int GetHeight() const { return m_height; }
-
+			inline GLuint GetTextureID() const { return m_textureID; }
 		};
 	}
 }

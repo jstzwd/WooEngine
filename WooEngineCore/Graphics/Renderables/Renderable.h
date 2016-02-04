@@ -5,6 +5,7 @@
 #include "..\Buffers\IndexBuffer.h"
 #include "..\Buffers\VertexArray.h"
 #include "..\Renderers\Renderer.h"
+#include "..\Shaders\Texture.h"
 
 namespace Woo {
 	namespace Graphics {
@@ -13,6 +14,7 @@ namespace Woo {
 			Math::Vector3 position;
 			Math::Vector2 uv;
 			Math::Vector4 color;
+			float textureNumber;
 		};
 		
 		class Renderable2D{
@@ -21,7 +23,7 @@ namespace Woo {
 			Math::Vector2 m_size;
 			Math::Vector4 m_color;
 			std::vector<Math::Vector2> m_uvs;
-
+			Texture* m_texture;
 		public:
 			Renderable2D();
 			Renderable2D(Math::Vector3 position, Math::Vector2 size, Math::Vector4 color) 
@@ -43,11 +45,11 @@ namespace Woo {
 				myRenderer->Submit(this);
 			}
 		
-			inline const Math::Vector3& GetPosition() const { return m_position; };
-			inline const Math::Vector2& GetSize() const { return m_size; };
-			inline const std::vector<Math::Vector2>& GetUVs() const {return m_uvs; };
-			inline const Math::Vector4& GetColor() const { return m_color; };
-
+			inline const Math::Vector3& GetPosition() const { return m_position; }
+			inline const Math::Vector2& GetSize() const { return m_size; }
+			inline const std::vector<Math::Vector2>& GetUVs() const {return m_uvs; }
+			inline const Math::Vector4& GetColor() const { return m_color; }
+			inline const GLuint GetTextureID() const { return m_texture != nullptr ? m_texture->GetTextureID() : 0; }
 			
 		};
 	}

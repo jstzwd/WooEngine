@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Graphics\Window\Window.h"
 #include "Math\MathWoo.h"
+#include "Utility\Timer.h"
+
 #include "Graphics\Shaders\Shader.h"
 #include "Graphics\Renderers\BasicRenderer.h"
 #include "Graphics\Renderers\BatchRenderer.h"
@@ -8,7 +10,7 @@
 #include "Graphics\Renderables\Sprite.h"
 #include "Graphics\Renderables\StaticSprite.h"
 #include <time.h>
-#include "Utility\Timer.h"
+
 #include "Graphics\Layers\TileLayer.h" 
 #include <FreeImage.h>
 #include "Graphics\Shaders\Texture.h"
@@ -86,20 +88,35 @@ int main()
 
 	Shader* s = new Shader("SampleShaders/Simple.vert", "SampleShaders/Simple.frag");
 	
-	
+	s->Enable();
 	s->SetUniform2("light_pos", Vector2(0, -1));
 	TileLayer layer(s);
 
-	for (float y = -4.95; y < 5.0f; y += 0.11) {
-		for (float x = -4.95; x < 5.0f; x += 0.11) {
-			layer.AddRenderable2D(new Sprite(Math::Vector3(x, y, 0), Math::Vector2(0.1, 0.1), Math::Vector4(rand() % 1000 / 1000, 1, 0, 1)));
+	Texture* testTextures[] = {
+		new Texture("myTexture.png"),
+		new Texture("myTexture2.png"),
+		new Texture("myTexture3.png")
+	};
+
+	for (float y = -4.95; y < 5.0f; y += 0.33) {
+		for (float x = -4.95; x < 5.0f; x += 0.33) {
+			if (rand() % 4 == 0) 
+			{
+				layer.AddRenderable2D(new Sprite(Math::Vector3(x, y, 0), Math::Vector2(0.3, 0.3), Math::Vector4(rand() % 1000 / 1000, 1, 0, 1)));
+			}
+			else
+			{
+				int i = rand() % 3;
+				layer.AddRenderable2D(new Sprite(Math::Vector3(x, y, 0), Math::Vector2(0.3, 0.3), testTextures[i]));
+				
+			}
+
 		}
 	}
-	glActiveTexture(GL_TEXTURE0);
-	Texture myTex("myTexture.png");
-	myTex.Bind();
+
+	GLint textureNumbers[] = { 0,1,2,3,4,5,6,7,8,9 };
 	s->Enable();
-	s->SetUniform1("myTexture", 0);
+	s->SetUniform1("myTextures", 10, textureNumbers);
 	s->SetUniform4("pr_matrix", ortho);
 	//TileLayer layer(s);
 #if 1
@@ -142,6 +159,10 @@ int main()
 			fps = 0;
 		}
 		
+		
+	}
+	for (int i = 0; i < 3; i++) {
+		delete testTextures[i];
 	}
 	return 0;
 }
