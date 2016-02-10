@@ -114,6 +114,21 @@
     <ClCompile Include="Graphics\Window\Window.cpp">
       <Filter>WooSource\Graphics\Window</Filter>
     </ClCompile>
+    <ClCompile Include="External\FreeType-gl\texture-font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="External\FreeType-gl\texture-atlas.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="External\FreeType-gl\platform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="External\FreeType-gl\ftvector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="External\FreeType-gl\utf8-utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\Renderers\BasicRenderer.h">
@@ -181,6 +196,30 @@
     </ClInclude>
     <ClInclude Include="Graphics\Window\Window.h">
       <Filter>WooSource\Graphics\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="External\FreeType-gl\freetype-gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="External\FreeType-gl\opengl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="External\FreeType-gl\platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="External\FreeType-gl\texture-atlas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="External\FreeType-gl\texture-font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="External\FreeType-gl\vec234.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="External\FreeType-gl\ftvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="External\FreeType-gl\utf8-utils.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

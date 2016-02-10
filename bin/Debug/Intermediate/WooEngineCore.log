@@ -1,22 +1,17 @@
-﻿Build started 2/9/2016 5:14:36 PM.
+﻿Build started 2/9/2016 11:24:15 PM.
      1>Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
-         c:\users\di_wu\desktop\wooengine\dependencies\glfw\include\glfw\glfw3.h(85): note: see previous definition of 'APIENTRY'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(59): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(103): warning C4305: 'initializing': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(103): warning C4305: '+=': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(104): warning C4305: 'initializing': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(104): warning C4305: '+=': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(107): warning C4305: 'argument': truncation from 'double' to 'const float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(107): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(112): warning C4305: 'argument': truncation from 'double' to 'const float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(135): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+         C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D FT2_BUILD_LIBRARY /D WIN32 /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt "External\FreeType-gl\texture-font.c" "External\FreeType-gl\utf8-utils.c"
+         utf8-utils.c
+         texture-font.c
+         Generating Code...
        Link:
-         C:\Softwares\Visual Studio 2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe" /INCREMENTAL /NOLOGO FreeImage.lib glfw3.lib glew32s.lib opengl32.lib legacy_stdio_definitions.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.lib" /MACHINE:X86 C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BasicRenderer.obj
+         C:\Softwares\Visual Studio 2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe" /INCREMENTAL /NOLOGO freetype262.lib FreeImage.lib glfw3.lib glew32s.lib opengl32.lib legacy_stdio_definitions.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.lib" /MACHINE:X86 C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\platform.obj
+         "C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\texture-atlas.obj"
+         "C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\texture-font.obj"
+         C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\ftvector.obj
+         "C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\utf8-utils.obj"
+         C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BasicRenderer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BatchRenderer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Buffer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\FileUtility.obj
@@ -37,9 +32,13 @@
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Vector.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\VertexArray.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Window.obj
+            Creating library C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.lib and object C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exp
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\di_wu\Desktop\WooEngine\bin\Debug\vc120.pdb'; linking object as if no debug info
          WooEngineCore.vcxproj -> C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe
      1>Done Building Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.06
+Time Elapsed 00:00:00.73

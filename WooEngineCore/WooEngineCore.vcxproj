@@ -88,11 +88,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FT2_BUILD_LIBRARY;WIN32;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>FreeImage.lib;glfw3.lib;glew32s.lib;opengl32.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freetype262.lib;FreeImage.lib;glfw3.lib;glew32s.lib;opengl32.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -141,6 +141,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="External\FreeType-gl\platform.c" />
+    <ClCompile Include="External\FreeType-gl\texture-atlas.c" />
+    <ClCompile Include="External\FreeType-gl\texture-font.c" />
+    <ClCompile Include="External\FreeType-gl\ftvector.c" />
+    <ClCompile Include="External\FreeType-gl\utf8-utils.c" />
     <ClCompile Include="Graphics\Renderers\BasicRenderer.cpp" />
     <ClCompile Include="Graphics\Renderers\BatchRenderer.cpp" />
     <ClCompile Include="Graphics\Buffers\Buffer.cpp" />
@@ -164,6 +169,14 @@
     <ClCompile Include="Graphics\Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="External\FreeType-gl\freetype-gl.h" />
+    <ClInclude Include="External\FreeType-gl\opengl.h" />
+    <ClInclude Include="External\FreeType-gl\platform.h" />
+    <ClInclude Include="External\FreeType-gl\texture-atlas.h" />
+    <ClInclude Include="External\FreeType-gl\texture-font.h" />
+    <ClInclude Include="External\FreeType-gl\utf8-utils.h" />
+    <ClInclude Include="External\FreeType-gl\vec234.h" />
+    <ClInclude Include="External\FreeType-gl\ftvector.h" />
     <ClInclude Include="Graphics\Renderers\BasicRenderer.h" />
     <ClInclude Include="Graphics\Renderers\BatchRenderer.h" />
     <ClInclude Include="Utility\ImageUtility.h" />
