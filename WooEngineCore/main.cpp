@@ -14,6 +14,8 @@
 #include "Graphics\Layers\TileLayer.h" 
 #include <FreeImage.h>
 #include "Graphics\Shaders\Texture.h"
+#include <ft2build.h>
+#include <freetype\freetype.h>
 
 int main() 
 {

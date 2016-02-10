@@ -1,4 +1,4 @@
-﻿Build started 2/4/2016 2:30:09 PM.
+﻿Build started 2/9/2016 5:14:36 PM.
      1>Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
@@ -6,15 +6,15 @@
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\math\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
      1>c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
          c:\users\di_wu\desktop\wooengine\dependencies\glfw\include\glfw\glfw3.h(85): note: see previous definition of 'APIENTRY'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(57): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(101): warning C4305: 'initializing': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(101): warning C4305: '+=': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(102): warning C4305: 'initializing': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(102): warning C4305: '+=': truncation from 'double' to 'float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(105): warning C4305: 'argument': truncation from 'double' to 'const float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(105): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(110): warning C4305: 'argument': truncation from 'double' to 'const float'
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(133): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(59): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(103): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(103): warning C4305: '+=': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(104): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(104): warning C4305: '+=': truncation from 'double' to 'float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(107): warning C4305: 'argument': truncation from 'double' to 'const float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(107): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(112): warning C4305: 'argument': truncation from 'double' to 'const float'
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\main.cpp(135): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
        Link:
          C:\Softwares\Visual Studio 2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe" /INCREMENTAL /NOLOGO FreeImage.lib glfw3.lib glew32s.lib opengl32.lib legacy_stdio_definitions.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.lib" /MACHINE:X86 C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BasicRenderer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BatchRenderer.obj
@@ -42,4 +42,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.03
+Time Elapsed 00:00:01.06
