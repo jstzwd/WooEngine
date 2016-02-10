@@ -25,12 +25,16 @@ namespace Woo {
 			std::vector<Math::Vector2> m_uvs;
 			Texture* m_texture;
 		public:
-			Renderable2D();
-			Renderable2D(Math::Vector3 position, Math::Vector2 size, Math::Vector4 color) 
-				:m_position(position), m_size(size), m_color(color)
+			Renderable2D()
+				:m_texture(nullptr)
 			{
 				InitializeUV();
-			};
+			}
+			Renderable2D(Math::Vector3 position, Math::Vector2 size, Math::Vector4 color) 
+				:m_position(position), m_size(size), m_color(color), m_texture(nullptr)
+			{
+				InitializeUV();
+			}
 			void InitializeUV()
 			{
 				m_uvs.push_back(Math::Vector2(0, 0));
@@ -49,7 +53,7 @@ namespace Woo {
 			inline const Math::Vector2& GetSize() const { return m_size; }
 			inline const std::vector<Math::Vector2>& GetUVs() const {return m_uvs; }
 			inline const Math::Vector4& GetColor() const { return m_color; }
-			inline const GLuint GetTextureID() const { return m_texture != nullptr ? m_texture->GetTextureID() : 0; }
+			inline const GLuint GetTextureID() const { return m_texture ? m_texture->GetTextureID() : 0; }
 			
 		};
 	}
