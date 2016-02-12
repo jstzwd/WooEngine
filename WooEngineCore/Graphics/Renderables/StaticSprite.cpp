@@ -20,8 +20,8 @@ namespace Woo {
 			GLushort indices[] = { 0,1,2,2,3,0 };
 			m_myVAO = new VertexArray();
 			m_myIBO = new IndexBuffer(indices, 6);
-			m_myVAO->AddBuffer(new Buffer(vertices, 12, 3), 0);
-			m_myVAO->AddBuffer(new Buffer(colors, 16, 4), 1);
+			m_myVAO->AddBuffer(new VertexBuffer(vertices, 12, 3), 0);
+			m_myVAO->AddBuffer(new VertexBuffer(colors, 16, 4), 1);
 		}
 
 		StaticSprite::~StaticSprite() {

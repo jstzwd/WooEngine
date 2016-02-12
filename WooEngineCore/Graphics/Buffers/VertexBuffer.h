@@ -4,13 +4,13 @@
 
 namespace Woo {
 	namespace Graphics {
-		class Buffer {
+		class VertexBuffer {
 		private:
 			GLuint m_bufferID;
 			GLuint m_componentCount;
 		public:
-			Buffer(GLfloat* data, GLsizei count, GLuint componentCount);
-			~Buffer();
+			VertexBuffer(GLfloat* data, GLsizei count, GLuint componentCount);
+			~VertexBuffer();
 			void Bind() const;
 			void UnBind() const;
 			GLuint GetComponentCount() const;

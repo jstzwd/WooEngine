@@ -60,9 +60,6 @@
     <ClCompile Include="Graphics\Renderers\BatchRenderer.cpp">
       <Filter>WooSource\Graphics\Renderers</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\Buffers\Buffer.cpp">
-      <Filter>WooSource\Graphics\Buffers</Filter>
-    </ClCompile>
     <ClCompile Include="Utility\FileUtility.cpp">
       <Filter>WooSource\Utility</Filter>
     </ClCompile>
@@ -132,6 +129,9 @@
     <ClCompile Include="Graphics\Renderables\Text.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Graphics\Buffers\VertexBuffer.cpp">
+      <Filter>WooSource\Graphics\Buffers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\Renderers\BasicRenderer.h">
@@ -139,9 +139,6 @@
     </ClInclude>
     <ClInclude Include="Graphics\Renderers\BatchRenderer.h">
       <Filter>WooSource\Graphics\Renderers</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Buffers\Buffer.h">
-      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClInclude>
     <ClInclude Include="Utility\FileUtility.h">
       <Filter>WooSource\Utility</Filter>
@@ -226,6 +223,9 @@
     </ClInclude>
     <ClInclude Include="Graphics\Renderables\Text.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Buffers\VertexBuffer.h">
+      <Filter>WooSource\Graphics\Buffers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

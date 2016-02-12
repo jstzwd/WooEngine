@@ -1,7 +1,7 @@
 #pragma once
 
 #include "..\..\Math\MathWoo.h"
-#include "..\Buffers\Buffer.h"
+#include "..\Buffers\VertexBuffer.h"
 #include "..\Buffers\IndexBuffer.h"
 #include "..\Buffers\VertexArray.h"
 #include "..\Renderers\Renderer.h"

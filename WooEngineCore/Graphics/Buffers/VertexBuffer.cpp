@@ -1,26 +1,26 @@
-#include "Buffer.h"
+#include "VertexBuffer.h"
 
 namespace Woo {
 	namespace Graphics {
-		Buffer::Buffer(GLfloat* data, GLsizei count, GLuint componentCount) : m_componentCount(componentCount) {
+		VertexBuffer::VertexBuffer(GLfloat* data, GLsizei count, GLuint componentCount) : m_componentCount(componentCount) {
 			glGenBuffers(1, &m_bufferID);
 			glBindBuffer(GL_ARRAY_BUFFER, m_bufferID);
 			glBufferData(GL_ARRAY_BUFFER, count*sizeof(float), data, GL_STATIC_DRAW);
 			glBindBuffer(GL_ARRAY_BUFFER, 0);
 		}
-		Buffer::~Buffer()
+		VertexBuffer::~VertexBuffer()
 		{
 			glDeleteBuffers(1, &m_bufferID);
 		}
-		void Buffer::Bind() const {
+		void VertexBuffer::Bind() const {
 			glBindBuffer(GL_ARRAY_BUFFER, m_bufferID);
 		}
 
-		void Buffer::UnBind() const {
+		void VertexBuffer::UnBind() const {
 			glBindBuffer(GL_ARRAY_BUFFER, 0);
 		}
 
-		GLuint Buffer::GetComponentCount() const
+		GLuint VertexBuffer::GetComponentCount() const
 		{
 			return m_componentCount;
 		}

@@ -148,7 +148,7 @@
     <ClCompile Include="External\FreeType-gl\utf8-utils.c" />
     <ClCompile Include="Graphics\Renderers\BasicRenderer.cpp" />
     <ClCompile Include="Graphics\Renderers\BatchRenderer.cpp" />
-    <ClCompile Include="Graphics\Buffers\Buffer.cpp" />
+    <ClCompile Include="Graphics\Buffers\VertexBuffer.cpp" />
     <ClCompile Include="Graphics\Renderables\Text.cpp" />
     <ClCompile Include="Utility\FileUtility.cpp" />
     <ClCompile Include="Utility\ImageUtility.cpp" />
@@ -185,7 +185,7 @@
     <ClInclude Include="Graphics\Layers\Layer.h" />
     <ClInclude Include="Graphics\Renderables\ParentRenderable.h" />
     <ClInclude Include="Graphics\Renderables\Renderable.h" />
-    <ClInclude Include="Graphics\Buffers\Buffer.h" />
+    <ClInclude Include="Graphics\Buffers\VertexBuffer.h" />
     <ClInclude Include="Utility\FileUtility.h" />
     <ClInclude Include="Graphics\Buffers\IndexBuffer.h" />
     <ClInclude Include="Math\Math.h" />

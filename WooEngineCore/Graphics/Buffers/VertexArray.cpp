@@ -19,7 +19,7 @@ namespace Woo {
 		void VertexArray::UnBind() const {
 			glBindVertexArray(0);
 		}
-		void VertexArray::AddBuffer(Buffer* newBuffer, GLuint index)
+		void VertexArray::AddBuffer(VertexBuffer* newBuffer, GLuint index)
 		{
 			Bind();
 			newBuffer->Bind();
