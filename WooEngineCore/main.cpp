@@ -14,8 +14,7 @@
 #include "Graphics\Layers\TileLayer.h" 
 #include <FreeImage.h>
 #include "Graphics\Shaders\Texture.h"
-#include <ft2build.h>
-#include <freetype\freetype.h>
+#include "Graphics\Renderables\Text.h"
 
 int main() 
 {
@@ -120,7 +119,9 @@ int main()
 	s->Enable();
 	s->SetUniform1("myTextures", 10, textureNumbers);
 	s->SetUniform4("pr_matrix", ortho);
-	//TileLayer layer(s);
+
+	Text myText("WooEngine", Math::Vector3(0, 0, 0), Math::Vector4(1, 1, 1, 1));
+	layer.AddRenderable2D(&myText);
 #if 1
 	
 
