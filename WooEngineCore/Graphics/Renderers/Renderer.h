@@ -15,6 +15,7 @@ namespace Woo {
 			Renderer2D();
 			void Push(const Math::Matrice4& newMatrix, bool isChild);
 			void Pop();
+			virtual void RenderText(const std::string& textString, const Math::Vector3& position, const Math::Vector4& color) {};
 			virtual void Begin() {};
 			virtual void Submit(const Renderable2D* sprite) = 0;
 			virtual void End() {};

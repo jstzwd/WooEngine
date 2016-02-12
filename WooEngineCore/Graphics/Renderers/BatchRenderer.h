@@ -3,6 +3,7 @@
 #include <deque>
 #include "Renderer.h"
 #include "..\Renderables\Renderable.h"
+#include "..\..\External\FreeType-gl\freetype-gl.h"
 
 namespace Woo {
 	namespace Graphics {
@@ -28,11 +29,16 @@ namespace Woo {
 			VertexData* m_buffer;
 
 			std::vector<GLuint> m_textures;
+
+			ftgl::texture_atlas_t* m_textureAtlas;
+			ftgl::texture_font_t* m_textureFont;
+
 		protected:
 			void Initialize();
 		public:
 			BatchRenderer2D();
 			~BatchRenderer2D();
+			void RenderText(const std::string& textString, const Math::Vector3& position, const Math::Vector4& color) override;
 			void Submit(const Renderable2D* sprite) override;
 			void Flush() override;
 			void Begin() override;

@@ -129,6 +129,9 @@
     <ClCompile Include="External\FreeType-gl\utf8-utils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Graphics\Renderables\Text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\Renderers\BasicRenderer.h">
@@ -219,6 +222,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="External\FreeType-gl\utf8-utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderables\Text.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -149,6 +149,7 @@
     <ClCompile Include="Graphics\Renderers\BasicRenderer.cpp" />
     <ClCompile Include="Graphics\Renderers\BatchRenderer.cpp" />
     <ClCompile Include="Graphics\Buffers\Buffer.cpp" />
+    <ClCompile Include="Graphics\Renderables\Text.cpp" />
     <ClCompile Include="Utility\FileUtility.cpp" />
     <ClCompile Include="Utility\ImageUtility.cpp" />
     <ClCompile Include="Graphics\Buffers\IndexBuffer.cpp" />
@@ -179,6 +180,7 @@
     <ClInclude Include="External\FreeType-gl\ftvector.h" />
     <ClInclude Include="Graphics\Renderers\BasicRenderer.h" />
     <ClInclude Include="Graphics\Renderers\BatchRenderer.h" />
+    <ClInclude Include="Graphics\Renderables\Text.h" />
     <ClInclude Include="Utility\ImageUtility.h" />
     <ClInclude Include="Graphics\Layers\Layer.h" />
     <ClInclude Include="Graphics\Renderables\ParentRenderable.h" />

@@ -1,26 +1,13 @@
-﻿Build started 2/10/2016 2:06:39 PM.
+﻿Build started 2/11/2016 4:44:09 PM.
      1>Project "C:\Users\di_wu\Desktop\WooEngine\WooEngineCore\WooEngineCore.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D FT2_BUILD_LIBRARY /D WIN32 /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Graphics\Layers\Layer.cpp Graphics\Layers\TileLayer.cpp Graphics\Renderables\ParentRenderable.cpp Graphics\Renderables\Renderable.cpp Graphics\Renderables\Sprite.cpp Graphics\Renderables\StaticSprite.cpp Graphics\Renderers\BasicRenderer.cpp Graphics\Renderers\BatchRenderer.cpp main.cpp
-         Layer.cpp
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\graphics\layers\layer.cpp(19): warning C4018: '<': signed/unsigned mismatch
-         Generating Code...
-         Compiling...
+         C:\Softwares\Visual Studio 2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D FT2_BUILD_LIBRARY /D WIN32 /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\\" /Fd"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Graphics\Renderers\BatchRenderer.cpp
          BatchRenderer.cpp
      1>c:\users\di_wu\desktop\wooengine\wooenginecore\math\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\graphics\renderers\batchrenderer.cpp(68): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\graphics\renderers\batchrenderer.cpp(125): warning C4018: '<': signed/unsigned mismatch
-         StaticSprite.cpp
-     1>c:\users\di_wu\desktop\wooengine\wooenginecore\math\math.h(9): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-         Generating Code...
-         Skipping... (no relevant changes detected)
-         main.cpp
-         BasicRenderer.cpp
-         Sprite.cpp
-         Renderable.cpp
-         ParentRenderable.cpp
-         TileLayer.cpp
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\graphics\renderers\batchrenderer.cpp(58): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\graphics\renderers\batchrenderer.cpp(81): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\graphics\renderers\batchrenderer.cpp(142): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\di_wu\desktop\wooengine\wooenginecore\graphics\renderers\batchrenderer.cpp(199): warning C4018: '<': signed/unsigned mismatch
        Link:
          C:\Softwares\Visual Studio 2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.exe" /INCREMENTAL /NOLOGO freetype262.lib FreeImage.lib glfw3.lib glew32s.lib opengl32.lib legacy_stdio_definitions.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\di_wu\Desktop\WooEngine\bin\Debug\WooEngineCore.lib" /MACHINE:X86 C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\platform.obj
          "C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\texture-atlas.obj"
@@ -30,6 +17,7 @@
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BasicRenderer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\BatchRenderer.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Buffer.obj
+         C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\Text.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\FileUtility.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\ImageUtility.obj
          C:\Users\di_wu\Desktop\WooEngine\bin\Debug\Intermediate\IndexBuffer.obj
@@ -53,4 +41,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.68
+Time Elapsed 00:00:00.79
