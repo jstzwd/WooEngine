@@ -17,7 +17,7 @@ void main(){
 	vec4 baseColor=myColor;
 	if(myTextureNumber>0){
 	    int number=int(myTextureNumber-0.5);
-		baseColor=texture(myTextures[number],myUV);
+		baseColor=myColor*texture(myTextures[number],myUV);
 	}
 	color=baseColor*intensity;
 }

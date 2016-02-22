@@ -47,7 +47,7 @@ namespace Woo{
 
 			glBindVertexArray(0);
 
-			m_textureAtlas = texture_atlas_new(512, 512, 1);
+			m_textureAtlas = texture_atlas_new(512, 512, 2);
 			m_textureFont = texture_font_new_from_file(m_textureAtlas, 81, "arial.ttf");
 		}
 
