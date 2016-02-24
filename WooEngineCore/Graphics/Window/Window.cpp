@@ -44,7 +44,7 @@ namespace Woo {
 			}
 			glfwMakeContextCurrent(m_window);
 			glfwSetWindowUserPointer(m_window, this);
-			glfwSetWindowSizeCallback(m_window, WindowResize);
+			glfwSetFramebufferSizeCallback(m_window, WindowResize);
 			glfwSetKeyCallback(m_window, KeyCallBack);
 			glfwSetMouseButtonCallback(m_window, MouseButtonCallBack);
 			glfwSetCursorPosCallback(m_window, MousePositionCallback);
