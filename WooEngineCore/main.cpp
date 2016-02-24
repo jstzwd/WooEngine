@@ -133,7 +133,7 @@ int main()
 		window.Clear();
 		double x, y;
 		window.GetMousePosition(x, y);
-		myShader.SetUniform2("light_pos", Vector2(x*10/1600-5, 5-y*10/1200));
+		myShader.SetUniform2("light_pos", Vector2(x*10/window.GetWidth()-5, 5-y*10/window.GetHeight()));
 
 #if 0
 		myVA.Bind();

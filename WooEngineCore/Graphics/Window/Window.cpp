@@ -67,6 +67,9 @@ namespace Woo {
 		}
 		void Window::WindowResize(GLFWwindow* window, int width, int height) {
 			glViewport(0, 0, width, height);
+			Window* thisWindow = (Window*)glfwGetWindowUserPointer(window);
+			thisWindow->m_width = width;
+			thisWindow->m_height = height;
 		}
 		void Window::KeyCallBack(GLFWwindow* window, int key, int scancode, int action, int mode) {
 			m_keys[key] = (action != GLFW_RELEASE);
