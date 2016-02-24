@@ -29,6 +29,8 @@ namespace Woo {
 
 			newBuffer->UnBind();
 			UnBind();
+
+			m_buffers.push_back(newBuffer);
 		}
 	}
 }

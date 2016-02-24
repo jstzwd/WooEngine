@@ -146,6 +146,8 @@
     <ClCompile Include="External\FreeType-gl\texture-font.c" />
     <ClCompile Include="External\FreeType-gl\ftvector.c" />
     <ClCompile Include="External\FreeType-gl\utf8-utils.c" />
+    <ClCompile Include="Graphics\Fonts\Font.cpp" />
+    <ClCompile Include="Graphics\Fonts\FontPool.cpp" />
     <ClCompile Include="Graphics\Renderers\BasicRenderer.cpp" />
     <ClCompile Include="Graphics\Renderers\BatchRenderer.cpp" />
     <ClCompile Include="Graphics\Buffers\VertexBuffer.cpp" />
@@ -178,6 +180,8 @@
     <ClInclude Include="External\FreeType-gl\utf8-utils.h" />
     <ClInclude Include="External\FreeType-gl\vec234.h" />
     <ClInclude Include="External\FreeType-gl\ftvector.h" />
+    <ClInclude Include="Graphics\Fonts\Font.h" />
+    <ClInclude Include="Graphics\Fonts\FontPool.h" />
     <ClInclude Include="Graphics\Renderers\BasicRenderer.h" />
     <ClInclude Include="Graphics\Renderers\BatchRenderer.h" />
     <ClInclude Include="Graphics\Renderables\Text.h" />

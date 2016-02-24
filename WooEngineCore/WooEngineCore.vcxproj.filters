@@ -132,6 +132,12 @@
     <ClCompile Include="Graphics\Buffers\VertexBuffer.cpp">
       <Filter>WooSource\Graphics\Buffers</Filter>
     </ClCompile>
+    <ClCompile Include="Graphics\Fonts\Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Fonts\FontPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\Renderers\BasicRenderer.h">
@@ -226,6 +232,12 @@
     </ClInclude>
     <ClInclude Include="Graphics\Buffers\VertexBuffer.h">
       <Filter>WooSource\Graphics\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Fonts\Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Fonts\FontPool.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

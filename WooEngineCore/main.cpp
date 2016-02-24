@@ -119,8 +119,8 @@ int main()
 	s->Enable();
 	s->SetUniform1("myTextures", 10, textureNumbers);
 	s->SetUniform4("pr_matrix", ortho);
-
-	Text myText("WooEngine", Math::Vector3(-4, 4, 0), Math::Vector4(1, 1, 1, 0.5));
+	
+	Text myText("WooEngine", Math::Vector3(-4, 4, 0), Math::Vector4(1, 1, 1, 0.5), std::string("aria"));
 	layer.AddRenderable2D(&myText);
 #if 1
 	

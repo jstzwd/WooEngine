@@ -47,18 +47,16 @@ namespace Woo{
 
 			glBindVertexArray(0);
 
-			m_textureAtlas = texture_atlas_new(512, 512, 2);
-			m_textureFont = texture_font_new_from_file(m_textureAtlas, 81, "arial.ttf");
 		}
 
-		void BatchRenderer2D::RenderText(const std::string& textString, const Math::Vector3& position, const Math::Vector4& color)
+		void BatchRenderer2D::RenderText(const std::string& textString, const Math::Vector3& position, const Math::Vector4& color, const Font* font)
 		{
 			float textureNumber = 0.f;
 			
 			bool textureIncluded = false;
 			for (int i = 0; i < m_textures.size(); i++)
 			{
-				if (m_textureAtlas->id == m_textures[i])
+				if (font->GetFontID() == m_textures[i])
 				{
 					textureNumber = (float)(i + 1);
 					textureIncluded = true;
@@ -73,7 +71,7 @@ namespace Woo{
 					Flush();
 					Begin();
 				}
-				m_textures.push_back(m_textureAtlas->id);
+				m_textures.push_back(font->GetFontID());
 				textureNumber = (float)m_textures.size();
 			}
 			float unitX = 1600 / 10;
@@ -82,7 +80,7 @@ namespace Woo{
 			float y = position.y;
 			for (int i = 0; i < textString.length(); i++) {
 				char character = textString[i];
-				texture_glyph_t* glyph = texture_font_get_glyph(m_textureFont, &character);
+				texture_glyph_t* glyph = texture_font_get_glyph(font->GetFontTexture(), &character);
 				if (glyph != NULL)
 				{
 					if (i > 0)

@@ -7,7 +7,13 @@ namespace Woo {
 		{
 		
 		}
-
+		ParentRenderable2D::~ParentRenderable2D()
+		{
+			for(Renderable2D* childSprite:m_childRenderable2Ds)
+			{
+				delete childSprite;
+			}
+		}
 		void ParentRenderable2D::Add(Renderable2D* newRenderable2D)
 		{
 			m_childRenderable2Ds.push_back(newRenderable2D);

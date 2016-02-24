@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "../Fonts/FontPool.h"
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
